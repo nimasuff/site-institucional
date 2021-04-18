@@ -196,6 +196,7 @@ div#menu{
         align-items: center;
         background-color: var(--cor-cinza);
         height: 40%;
+        width: 100vw;
     }
         #principal h1{
             color: var(--cor-primaria-escura);
