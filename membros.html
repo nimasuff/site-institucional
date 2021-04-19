@@ -7,7 +7,12 @@
     <title>NIMAS | UFF</title>
     <link rel="shortcut icon" href="img/logo nimas sem uff.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="membros.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- LINK PARA FONTES -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -17,11 +22,11 @@
                 <img src="img/logo uff.png" alt="Logo da Universidade Federal Fluminense (UFF)">
             </div>
             <div id="menu">
-                <a href="#principal">Início</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#projetos">Projetos</a>
-                <a href="membros.html">Membros</a>
-                <a href="#contato">Contato</a>
+                <a href="index.html#principal">Início</a>
+                <a href="index.html#sobre">Sobre</a>
+                <a href="index.html#projetos">Projetos</a>
+                <a href="membros.html" onmouseover="submenuMembro()" id="botao-membros">Membros</a>
+                <a href="index.html#contato">Contato</a>
             </div>
             <div id="botão-menu">
                 <label for="barra-menu"><i class="fa fa-bars"></i></label>
@@ -31,10 +36,21 @@
     </nav>
     <div id="submenu-membro" style="display: none;">
         <a href="coordenadora">Coordenação</a>
-        <a href="pesquisadores-uff">Pesquisadores da casa</a>
+        <a href="pesquisadores-uff">Pesquisadores da casa (UFF)</a>
         <a href="pesquisadores-externos">Pesquisadores externos</a>
-        <a href="formandos-ciencias-economicas">Formando ciências econômicas</a>
+        <a href="formandos-ciencias-economicas">Formandos ciências econômicas</a>
         <a href="alunos">Formandos ciências ambientais</a>  
     </div>
+    <article>
+        <header>
+            <div class="image">
+                <img src="img/membros-page/team-work.svg" alt="desenho de duas pessoas sentadas">
+            </div>
+            <div class="conteudo">
+                <h1>Organizção</h1>
+            </div>
+        </header>
+    </article>
 </body>
+<script src="config.js"></script>
 </html>

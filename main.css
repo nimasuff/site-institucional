@@ -61,17 +61,23 @@ nav{
 }
 
     #container {
-        width: 90vw;
-        position: relative;
+        width: 100vw;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
         div#logo{
             display: flex;
-            position: absolute;
+            width: 20%;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
             left: 0;
             top: 0;
+
+            background-color: var(--cor-primaria-clara);
+            
         }
 
             div#logo img{
@@ -80,30 +86,30 @@ nav{
                 align-items: center;
                 position: relative;
             }
-            div#logo img:last-child{
-                margin-left: 1rem;
-                height: 5.2rem;
-            }
-            div#logo::after{
+            div#logo:first-child::after{
                 content: '';
-                height: 60%;
-                width: 1px;
-                background-color: var(--cor-primaria-clara);
+                height: 50%;
+                width: 1.5px;
+                background-color: var(--cor-primaria-escura);
                 position: absolute;
-                top: 1rem;
-                left: 6.5rem;
+                left: 9%;
+                top: 25%;    
             } 
 
         div#menu{
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: space-around;
             line-height: 5rem;
             flex-shrink: 0;
+            width: 80%;
+
+            
         }
 
             #menu a{
-                width: 5rem;
+                width: 100%;
                 text-align: center;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -131,11 +137,13 @@ nav{
                     background-color: var(--cor-destaque-darker);
                     position: fixed;
                     top: 5.2rem;
-                    right: 16.8%;
+                    right: 2%;
                     width: 30%;
 
                     z-index: +3;
                     border-radius: 0 0 .3rem .3rem;
+
+                    transition: all 300ms ease;
                 }
                     div#submenu-membro a{
                         text-decoration: none;
@@ -175,41 +183,47 @@ nav{
                 }
 @media (max-width: 850px){
     #container{
-        width: 100%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         overflow-x: hidden;
     }
-    #botão-menu{
-        display: flex;
-        background-color: transparent;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-    }
-    #botão-menu .fa-bars{
-        cursor: pointer;
-        position: fixed;
-        color: var(--cor-primaria-escura);
-    }
-    div#menu{
-        flex-direction: column;
-        width: 25%;
-        height: auto;
-        background-color: var(--cor-destaque);
-        padding: 5rem 0 0 0;
-        align-items: center;
-        right: 0;
-        margin-right: -14rem;
-        position: fixed;
-        transition: margin-right ease-out 500ms;
-    }
-    div#menu a{
-        width: 100%;
-    }
-    div#menu a:hover{
-        background-color: var(--cor-destaque);
-    }
+        div#logo{
+            width: 100%;
+            justify-content: flex-start;
+        }
+            div#logo:first-child::after{
+                left: 5.8rem;
+        }
+        #botão-menu{
+            display: flex;
+            background-color: transparent;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+        }
+            #botão-menu .fa-bars{
+                cursor: pointer;
+                position: fixed;
+                color: var(--cor-primaria-escura);
+            }
+            div#menu{
+                flex-direction: column;
+                width: 25%;
+                height: auto;
+                background-color: var(--cor-destaque);
+                padding: 5rem 0 0 0;
+                align-items: center;
+                right: 0;
+                margin-right: -14rem;
+                position: fixed;
+                transition: margin-right ease-out 500ms;
+            }
+            div#menu a{
+                width: 100%;
+            }
+            div#menu a:hover{
+                background-color: var(--cor-destaque);
+            }
 }
 /*________________________________*/
 
@@ -217,7 +231,7 @@ nav{
 #principal{
     width: 100%;
     height: 150vh;
-    background-image: url(img/parede-verde.jpeg);
+    background-image: url(img/call-to-action/fundo-arvore.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -239,12 +253,25 @@ nav{
             color: var(--cor-primaria-escura);
             font-family: var(--fonte-principal);
             font-size: var(--fonte-h1-tamanho);
+            text-shadow: var(--cor-destaque-darker) .1rem .1rem .2rem;
 
             text-align: center;
-            letter-spacing: 1rem;
             line-height: 5rem;
+            letter-spacing: 1rem;
+            
             text-transform: uppercase;
             font-weight: 200;
+
+            position: relative;
+        }
+        #principal h1:first-child::after{
+            content: '';
+            width: 40%;
+            height: 1.5px;
+            background-color: var(--cor-destaque-darker);
+            position: absolute;
+            bottom: 0;
+            left: 25%;
         }
 @media (max-width: 800px){
     div#principal{
@@ -447,6 +474,7 @@ nav{
     #e-mail p{
         font-family: var(--fonte-secundaria);
         font-size: var(--fonte-p-tamanho);
+        color: var(--cor-primaria-clara);
         height: min-content;
         word-wrap: break-word;
         text-align: center;
@@ -973,6 +1001,9 @@ footer{
         }
         #header i{
             font-size: calc(1vw + .6rem);
+        }
+        #header i:hover{
+            color: var(--cor-destaque-darker);
         }
         #header p{
             font-family: var(--fonte-secundaria);

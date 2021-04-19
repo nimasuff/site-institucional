@@ -17,11 +17,10 @@ function submenuMembro(){
     }
     }
     showSubMenuMembro();
+    submenu.addEventListener("mouseover",showSubMenuMembro);
     
     var botao_membros = document.getElementById("botao-membros");
     botao_membros.addEventListener("mouseleave",hideSubMenuMembro);
-
-    submenu.addEventListener("mouseover",showSubMenuMembro);
     submenu.addEventListener("mouseleave",hideSubMenuMembro);
     function hideSubMenuMembro(){
         submenu.style.display = "none";
