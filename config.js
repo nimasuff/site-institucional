@@ -8,6 +8,27 @@ function menuMobile(){
         menu.style.marginRight = "0rem";
     }
 }
+// faz um menu dinâmico aparacer
+function submenuMembro(){
+    var submenu = document.getElementById("submenu-membro");
+    function showSubMenuMembro(){
+    if (submenu.style.display == "none"){
+        submenu.style.display = "flex";
+    }
+    }
+    showSubMenuMembro();
+    
+    var botao_membros = document.getElementById("botao-membros");
+    botao_membros.addEventListener("mouseleave",hideSubMenuMembro);
+
+    submenu.addEventListener("mouseover",showSubMenuMembro);
+    submenu.addEventListener("mouseleave",hideSubMenuMembro);
+    function hideSubMenuMembro(){
+        submenu.style.display = "none";
+    }
+}
+
+
 // faz o slide do projeto ficar maior e menor conforme o movimento do mouse, e faz aparecer o restante do conteudo
 function slideProjeto1(){
     var titulo = document.getElementById("titulo-projetos");
