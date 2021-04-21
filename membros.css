@@ -35,7 +35,7 @@ article {
     align-items: center;
 
     width: 95%;
-    height: 400vh;
+    height: 500vh;
 
     background-color: var(--cor-primaria-clara);
     border-radius: .4rem;
@@ -182,10 +182,103 @@ article {
             text-align: center;
             margin: 1rem 0;
         }
-        article main .seletor-membro{
+        #seletores{
+            width: 100%;
+            height: 300vh;
+            margin-top: 1rem;
+
             display: flex;
             flex-direction: column;
-            border: var(--cor-cinza) 1.5px solid;
-            width: 70%;
-            height: 40vh;
+            justify-content: space-around;
+            align-items: center;       
         }
+            .formacao{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                width: 100%;
+                height: 100%;
+
+                position: relative;
+            }
+            .formacao::after{
+                content: '';
+                width: 30%;
+                height: 1.5px;
+                background-color: var(--cor-cinza);
+
+                bottom: 0;
+            }
+                .formacao h3{
+                    font-size: var(--fonte-tamanho-mobile-pequeno);
+                    text-align: center;
+                    padding: 0 10%;
+
+                    text-transform: uppercase;
+                    width: 100%;
+                }
+                .formacao .seletor-membro{
+                    display: flex;
+                    flex-direction: column;
+                    border: var(--cor-cinza) 1.5px solid;
+                    border-radius: .3rem;
+                    width: 75%;
+                    height: 72%;
+                }
+                    .seletor-membro .foto-perfil{
+                        height: 70%;
+                        overflow-y: hidden;
+                        background-color: var(--cor-primaria-escura);
+                    }
+                        .foto-perfil img{
+                            width: 100%;
+                            opacity: .8;
+                        }
+                    .seletor-membro .descricao{
+                        height: 30%;
+                        background-color: var(--cor-destaque-darker);
+                    }
+                        .descricao .paragrafo{
+                            height: 50%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            font-style: italic;
+
+                            font-size: var(--fonte-tamanho-mobile-pequeno);
+                            color: var(--cor-primaria-clara);
+                        }
+                        .descricao .redes-sociais{
+                            height: 50%;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-evenly;
+                        }
+                            .redes-sociais a{
+                                text-decoration: none;
+                                color: var(--cor-primaria-clara);
+                                font-size: var(--fonte-tamanho-desktop-grande);
+                            }
+                            .redes-sociais a:hover,
+                            .redes-sociais a:focus{
+                                color: var(--cor-primaria-escura);
+                            }
+                .formacao .botoes-selecao{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    width: 100%;          
+                }
+                    .botoes-selecao i{
+                        font-size: var(--fonte-tamanho-mobile-grande);
+                        color: var(--cor-destaque);
+                    }
+                    .botoes-selecao i:hover,
+                    .botoes-selecao i:focus{
+                        color: var(--cor-primaria-escura);
+                    }
