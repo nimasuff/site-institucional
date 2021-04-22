@@ -240,7 +240,7 @@ article {
                         height: 30%;
                         background-color: var(--cor-destaque-darker);
                     }
-                        .descricao .paragrafo{
+                        .descricao .nome-membro{
                             height: 50%;
                             display: flex;
                             flex-direction: column;
