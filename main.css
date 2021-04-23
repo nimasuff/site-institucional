@@ -102,9 +102,7 @@ nav{
             justify-content: space-around;
             line-height: 5rem;
             flex-shrink: 0;
-            width: 80%;
-
-            
+            width: 80%;   
         }
 
             #menu a{
@@ -204,6 +202,8 @@ nav{
                 cursor: pointer;
                 position: fixed;
                 color: var(--cor-primaria-escura);
+
+                transition: transform 300ms ease;
             }
             div#menu{
                 flex-direction: column;

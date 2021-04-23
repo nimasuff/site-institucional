@@ -29,7 +29,7 @@
                 <a href="index.html#contato">Contato</a>
             </div>
             <div id="botão-menu">
-                <label for="barra-menu"><i class="fa fa-bars"></i></label>
+                <label for="barra-menu"><i class="fa fa-bars" id="barras" style="transform: rotate(0deg);"></i></label>
                 <input type="checkbox" name="barra-menu" id="barra-menu" onchange="menuMobile()">
             </div>
         </div>
@@ -70,21 +70,21 @@
                     <h3 class="link">Coordenadora</h3>
                     <div id="coordenadores" class="seletor-membro">
                         <div class="foto-perfil">
-                            <img src="img/membros/coordenadora.jpg" alt="foto de perfil da Claude Cohen" id="foto-perfil-coordenadora">
+                            <img src="img/membros/claude-cohen.jpg" alt="foto de perfil da Claude Cohen" id="foto-perfil-coordenadora">
                         </div>
                         <div class="descricao">
                             <div class="nome-membro" id="nome-coordenadora">
                                 Claude Cohen
                             </div>
                             <div class="redes-sociais">
-                                <a href="#" target="_blank" id="linkedin-coordenadora"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" target="_blank" id="lattes-coordenadora">Lattes</a>
+                                <a href="" target="_blank" id="linkedin-coordenadora"><i class="fa fa-linkedin"></i></a>
+                                <a href="" target="_blank" id="lattes-coordenadora">Lattes</a>
                             </div>
                         </div>
                     </div>
                     <div class="botoes-selecao">
-                        <button class="btn-ant"><i class="fa fa-arrow-circle-left"></i></button>
-                        <button class="btn-prox"><i class="fa fa-arrow-circle-right"></i></button>
+                        <button class="btn-ant" id="btn-ant-coor"><i class="fa fa-chevron-left"></i></button>
+                        <button class="btn-prox" id="btn-prox-coor"><i class="fa fa-chevron-right"></i></button>
                     </div>
                 </div>
 
@@ -105,8 +105,8 @@
                         </div>
                     </div>
                     <div class="botoes-selecao">
-                        <button class="btn-ant"><i class="fa fa-arrow-circle-left"></i></button>
-                        <button class="btn-prox"><i class="fa fa-arrow-circle-right"></i></button>
+                        <button class="btn-ant" id="btn-ant-pesq-int"><i class="fa fa-chevron-left"></i></button>
+                        <button class="btn-prox" id="btn-prox-pesq-int"><i class="fa fa-chevron-right"></i></button>
                     </div>
                 </div>
 
@@ -127,13 +127,13 @@
                         </div>
                     </div>
                     <div class="botoes-selecao">
-                        <button class="btn-ant"><i class="fa fa-arrow-circle-left"></i></button>
-                        <button class="btn-prox"><i class="fa fa-arrow-circle-right"></i></button>
+                        <button class="btn-ant" id="btn-ant-pesq-ext"><i class="fa fa-chevron-left"></i></button>
+                        <button class="btn-prox" id="btn-prox-pesq-ext"><i class="fa fa-chevron-right"></i></button>
                     </div>
                 </div>
 
                 <div class="formacao">
-                    <h3>Formandos Ciências Econômicas</h3>
+                    <h3>Bacharel Ciências Econômicas</h3>
                     <div id="formandos-economia" class="seletor-membro">
                         <div class="foto-perfil">
                             <img src="" alt="" id="foto-perfil-bach-econ">
@@ -149,13 +149,13 @@
                         </div>
                     </div>
                     <div class="botoes-selecao">
-                        <button class="btn-ant"><i class="fa fa-arrow-circle-left"></i></button>
-                        <button class="btn-prox"><i class="fa fa-arrow-circle-right"></i></button>
+                        <button class="btn-ant" id="btn-ant-bach-eco"><i class="fa fa-chevron-left"></i></button>
+                        <button class="btn-prox" id="btn-prox-bach-eco"><i class="fa fa-chevron-right"></i></button>
                     </div>
                 </div>
 
                 <div class="formacao">
-                    <h3>Formando Ciências Ambientais</h3>
+                    <h3>Bacharel Ciências Ambientais</h3>
                     <div id="formando-ambientais" class="seletor-membro">
                         <div class="foto-perfil">
                             <img src="" alt="" id="foto-perfil-bach-amb">
@@ -171,14 +171,16 @@
                         </div>
                     </div>
                     <div class="botoes-selecao">
-                        <button class="btn-ant"><i class="fa fa-arrow-circle-left"></i></button>
-                        <button class="btn-prox"><i class="fa fa-arrow-circle-right"></i></button>
+                        <button class="btn-ant" id="btn-ant-bach-amb"><i class="fa fa-chevron-left"></i></button>
+                        <button class="btn-prox" id="btn-prox-bach-amb"><i class="fa fa-chevron-right"></i></button>
                     </div>
                 </div>
 
             </section>
         </main>
     </article>
-</body>
+
 <script src="membros.js"></script>
+<script src="config.js"></script>
+</body>
 </html>

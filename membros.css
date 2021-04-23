@@ -12,6 +12,12 @@
     --cor-destaque-darker: rgba(95, 121, 1, .95);
     --cor-cinza: rgba(191, 191, 191, .6);
     --cor-primaria-escura: #000;
+
+    --cor-rosa: rgba(255,101,132,1);
+    --cor-roxo: rgba(63,61,86,1);
+    --cor-roxo2: rgba(47,46,65,1);
+    --cor-cinza: rgba(168,168,168,1);
+    --cor-cinza2: rgba(242, 242, 242,1);
 }
 
 *{
@@ -205,7 +211,7 @@ article {
             }
             .formacao::after{
                 content: '';
-                width: 30%;
+                width: 20%;
                 height: 1.5px;
                 background-color: var(--cor-cinza);
 
@@ -223,14 +229,18 @@ article {
                     display: flex;
                     flex-direction: column;
                     border: var(--cor-cinza) 1.5px solid;
-                    border-radius: .3rem;
+                    border-radius: .4rem;
                     width: 75%;
                     height: 72%;
+
+                    box-shadow: var(--cor-cinza) .4rem .4rem 2rem;
                 }
                     .seletor-membro .foto-perfil{
                         height: 70%;
                         overflow-y: hidden;
                         background-color: var(--cor-primaria-escura);
+
+                        border-radius: .4rem .4rem 0 0;
                     }
                         .foto-perfil img{
                             width: 100%;
@@ -238,7 +248,8 @@ article {
                         }
                     .seletor-membro .descricao{
                         height: 30%;
-                        background-color: var(--cor-destaque-darker);
+                        background-color: var(--cor-roxo2);
+                        border-radius: 0 0 .4rem .4rem;
                     }
                         .descricao .nome-membro{
                             height: 50%;
@@ -266,6 +277,10 @@ article {
                                 color: var(--cor-primaria-clara);
                                 font-size: var(--fonte-tamanho-desktop-grande);
                             }
+                            .redes-sociais a:last-child{
+                                font-weight: 900;
+                                letter-spacing: .15rem;
+                            }
                             .redes-sociais a:hover,
                             .redes-sociais a:focus{
                                 color: var(--cor-primaria-escura);
@@ -281,11 +296,15 @@ article {
                     justify-content: space-evenly;
                     width: 100%;          
                 }
-                    .botoes-selecao i{
-                        font-size: var(--fonte-tamanho-mobile-grande);
-                        color: var(--cor-destaque);
+                    .botoes-selecao button{
+                        background-color: transparent;
+                        border: none;
                     }
-                    .botoes-selecao i:hover,
-                    .botoes-selecao i:focus{
-                        color: var(--cor-primaria-escura);
-                    }
+                        .botoes-selecao i{
+                            font-size: var(--fonte-tamanho-mobile-grande);
+                            color: var(--cor-rosa);
+                        }
+                        .botoes-selecao i:hover,
+                        .botoes-selecao i:focus{
+                            color: var(--cor-primaria-escura);
+                        }

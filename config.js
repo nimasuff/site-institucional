@@ -8,6 +8,16 @@ function menuMobile(){
         menu.style.marginRight = "0rem";
     }
 }
+// faz o botão do menu rotacionar ao click
+    const barras = document.getElementById('barras');
+    barras.addEventListener('click', rodaBarras);
+    function rodaBarras(){
+        if (barras.style.transform == 'rotate(0deg)'){
+            barras.style.transform = "rotate(90deg)";
+        } else {
+        barras.style.transform = "rotate(0deg)";
+        }
+    }
 // faz um menu dinâmico aparacer
 function submenuMembro(){
     var submenu = document.getElementById("submenu-membro");
