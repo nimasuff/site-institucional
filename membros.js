@@ -9,7 +9,7 @@ const membros_coordenador = [
     },
     {
         id: 2,
-        nome: 'João Gabriel',
+        nome: 'João Gabriel Martins',
         img_perfil: 'img/membros/jg.jpg',
         linkedin: 'https://www.linkedin.com/in/joao-gabriel-martins/',
         lattes: 'http://lattes.cnpq.br/8542656790521330',

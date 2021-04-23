@@ -5,7 +5,7 @@
     --fonte-tamanho-mobile-grande: calc(1vw + 2rem);
     --fonte-tamanho-mobile-pequeno: calc(1vw + 1rem);
 
-    --fonte-family-principal: 'Oxygen', sans-serif;
+    --fonte-family-principal: 'Open Sans', sans-serif;
 
     --cor-primaria-clara: #fff;
     --cor-destaque: rgba(110, 140, 2, .95);
@@ -41,13 +41,13 @@ article {
     align-items: center;
 
     width: 95%;
-    height: 500vh;
+    height: auto;
+    margin-bottom: 2%;
 
     background-color: var(--cor-primaria-clara);
     border-radius: .4rem;
     margin-top: 5.6rem;
     padding-top: 1rem;
-
 }
 
     article header{
@@ -183,6 +183,8 @@ html{
                 height: 100%;
 
                 position: relative;
+
+                border: solid black 1px;
             }
             .formacao::after{
                 content: '';
@@ -195,7 +197,6 @@ html{
                 .formacao h3{
                     font-size: var(--fonte-tamanho-mobile-pequeno);
                     text-align: center;
-                    padding: 0 10%;
 
                     text-transform: uppercase;
                     width: 100%;
@@ -234,6 +235,7 @@ html{
                             align-items: center;
 
                             font-style: italic;
+                            margin: 0 10%;
 
                             font-size: var(--fonte-tamanho-mobile-pequeno);
                             color: var(--cor-primaria-clara);
@@ -278,21 +280,39 @@ html{
                         .botoes-selecao i{
                             font-size: var(--fonte-tamanho-mobile-grande);
                             color: var(--cor-rosa);
+                            cursor: pointer;
                         }
                         .botoes-selecao i:hover,
                         .botoes-selecao i:focus{
-                            color: var(--cor-primaria-escura);
+                            color: var(--cor-cinza);
                         }
-@media (min-width: 800px){
+@media (min-width: 600px){
+main aside{
+    display: none;
+}
     #seletores{
         flex-direction: row;
-        height: 100vh;
-    }
-        .formacao{
-            width: 50rem;
-        }
-    main{
-        flex-direction: row;
+        flex-wrap: wrap;
+        height: 200vh;
     }
 
+        .formacao{
+            width: 30%;
+            height: 50%;
+        }
+        .formacao h3{
+            height: 5rem;
+        }
+        .formacao .seletor-membro{
+            height: 60%;
+        }
+        .descricao .nome-membro{
+            text-align: center;
+
+            font-size: var(--fonte-tamanho-desktop-pequno);
+        }
+            .descricao .redes-sociais a{
+                font-size: var(--fonte-tamanho-desktop-pequno);
+            }
+    
 }
