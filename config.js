@@ -1,41 +1,22 @@
 // faz o menu lateral aparecer, em telas menores
-function menuMobile(){
-    var menu = document.getElementById("menu");
-    var posicao = menu.style.marginRight;
-    if(posicao == "0rem"){
-        menu.style.marginRight = "-14rem";
-    } else{
-        menu.style.marginRight = "0rem";
-    }
-}
-// faz o botão do menu rotacionar ao click
+const barraMenu = document.getElementById('barra-menu')
+barraMenu.addEventListener('change',function(){
+    const divMenuMobile = document.getElementById('menu-barras-mobile');
+    const divLinks = document.getElementById('menu-links');
     const barras = document.getElementById('barras');
-    barras.addEventListener('click', rodaBarras);
-    function rodaBarras(){
-        if (barras.style.transform == 'rotate(0deg)'){
-            barras.style.transform = "rotate(90deg)";
-        } else {
+    if (divMenuMobile.style.right == "3%"){
+        divMenuMobile.style.right = '14%';
+        divLinks.style.right = '0%';
+        barras.style.transform = "rotate(90deg)";
+        barras.style.color = '#fff';
+    } else {
+        divMenuMobile.style.right = '3%';
+        divLinks.style.right = '-100%';
         barras.style.transform = "rotate(0deg)";
-        }
+        barras.style.color = '#000';
     }
-// faz um menu dinâmico aparacer
-function submenuMembro(){
-    var submenu = document.getElementById("submenu-membro");
-    function showSubMenuMembro(){
-    if (submenu.style.display == "none"){
-        submenu.style.display = "flex";
-    }
-    }
-    showSubMenuMembro();
-    submenu.addEventListener("mouseover",showSubMenuMembro);
-    
-    var botao_membros = document.getElementById("botao-membros");
-    botao_membros.addEventListener("mouseleave",hideSubMenuMembro);
-    submenu.addEventListener("mouseleave",hideSubMenuMembro);
-    function hideSubMenuMembro(){
-        submenu.style.display = "none";
-    }
-}
+})
+
 
 
 // faz o slide do projeto ficar maior e menor conforme o movimento do mouse, e faz aparecer o restante do conteudo
