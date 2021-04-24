@@ -103,7 +103,7 @@ body{
                 text-align: center;
 
                 font-size: var(--fonte-tamanho-mobile-menu);
-                color: var(--cor-rosa);
+                color: var(--cor-roxo2);
                 letter-spacing: .1rem;
 
                 position: relative;
@@ -148,14 +148,14 @@ body{
                     color 400ms ease;
             }
 
-.discovery{
+#discovery{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: flex-start;
     height: auto;
 }
-    .discovery .image-explan{
+    #discovery .image-explan{
         display: flex;
         width: 90%;
         margin-left: 5%;
@@ -164,7 +164,7 @@ body{
             margin: 0 auto;
             height: 100%;
         }
-    .discovery #titulo-si{
+    #discovery #titulo-si{
         margin: 5% 5%;
         width: 90%;
     }
@@ -174,12 +174,38 @@ body{
         #titulo-si .sublinhado{
             height: 1.5px;
             width: 100%;
-            background-color: var(--cor-roxo);
+            background-color: var(--cor-rosa);
         }
         #titulo-si p{
             font-size: var(--fonte-tamanho-mobile-pequeno);
         }
-
+        .botao-contato{
+            margin: .5rem 0;
+        }
+            .botao-envio{
+                background-color: transparent;
+                border: 2px var(--cor-roxo2) solid;
+                border-radius: .2rem;
+                padding: .4rem 0;
+            }
+                .botao-envio a{
+                    padding: 1rem;
+                    font-weight: 900;
+                    background-color: transparent;
+                    text-decoration: none;
+                    color: var(--cor-roxo2);
+                    transition: 
+                        background-color 200ms ease-in,
+                        color 300ms ease-in;
+                }
+                .botao-envio a:hover,
+                .botao-envio a:focus{
+                    background-color: var(--cor-roxo2);
+                    color: var(--cor-rosa);
+                }
+#redes-sociais{
+    display: none;
+}
 @media (min-width: 700px){
     #menu{
         position: fixed;
@@ -212,21 +238,24 @@ body{
             #menu-navegacao #menu-barras-mobile{
                 display: none;
             }
-    .discovery{
+/*________________________________________________*/
+/* DISCORVERY SECTION */
+    #discovery{
         height: 90vh;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
         background: url(img/call-to-action/tec-logic.svg);
         background-repeat: no-repeat;
         background-position-x: 70%;
         background-position-y: 100%;
-        background-size: 30rem;
+        background-size: 32rem;
     }
-        .discovery .image-explan{
+        #discovery .image-explan{
             display: none;
         }
-        .discovery #titulo-si{
+        #discovery #titulo-si{
             height: auto;
         }
             #titulo-si h1{
@@ -238,6 +267,66 @@ body{
             #titulo-si .sublinhado{
                 width: 25%;
             }
+    #redes-sociais{
+        display: flex;
+        justify-content: flex-end;
+        height: 30%;
+        width: 23rem;
+        margin-right: .2rem;
+        position: relative;
+
+    }
+        .icones-rede{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            
+        }
+            .icones-rede a{
+                color: var(--cor-roxo);
+            }
+                .icones-rede i{
+                    font-size: var(--fonte-tamanho-desktop-grande);
+                    z-index: 3;
+                }
+                    .icones-rede .fa-github::after{
+                        content: '@nimasuff';
+                        position: absolute;
+                        top: .8rem;
+                        right: -7rem;
+                        font-size: var(--fonte-tamanho-desktop-pequno);
+                        font-family: var(--fonte-principal);
+                        transition: right 250ms ease-in;
+                    }
+                    .icones-rede .fa-github:hover::after{
+                        right: 3rem;
+                    }
+                    .icones-rede .fa-linkedin::after{
+                        content: 'nimasuff';
+                        position: absolute;
+                        top: 4.2rem;
+                        right: -7rem;
+                        font-size: var(--fonte-tamanho-desktop-pequno);
+                        font-family: var(--fonte-principal);
+                        transition: right 250ms ease-in;
+                    }
+                    .icones-rede .fa-linkedin:hover::after{
+                        right: 3rem;
+                    }
+                    .icones-rede .fa-envelope::after{
+                        content: 'labnimas.esc@id.uff.br';
+                        position: absolute;
+                        top: 7.2rem;
+                        right: -14rem;
+                        font-size: var(--fonte-tamanho-desktop-pequno);
+                        font-family: var(--fonte-principal);
+                        transition: right 250ms ease-in;
+                    }
+                    .icones-rede .fa-envelope:hover::after{
+                        right: 3rem;
+                    }
+                    
 }
 /*_____________________________*/
 

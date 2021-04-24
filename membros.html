@@ -15,25 +15,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div id="container">
-            <div id="logo">
-                <img src="img/logo nimas sem uff.png" alt="Logo do NIMAS">
-                <img src="img/logo uff.png" alt="Logo da Universidade Federal Fluminense (UFF)">
+    <header id="menu">
+        <nav id="menu-navegacao">
+            <div id="menu-logo">
+                <img src="img/logo nimas sem uff.png" alt="Logo do NIMAS" id="logo-nimas">
+                <div class="linha-vertical"></div>
+                <img src="img/logo uff.png" alt="Logo da Universidade Federal Fluminense (UFF)" id="logo-uff">
             </div>
-            <div id="menu">
-                <a href="index.html#principal">Início</a>
-                <a href="index.html#sobre">Sobre</a>
-                <a href="index.html#projetos">Projetos</a>
-                <a href="membros.html" onmouseover="submenuMembro()" id="botao-membros">Membros</a>
-                <a href="index.html#contato">Contato</a>
+            
+            <div id="menu-links" style="right: -100%;">
+                <a href="index.html" class="over-sublinha">Início</a>
+                <a href="#sobre" class="over-sublinha">Sobre</a>
+                <a href="#projetos" class="over-sublinha">Projetos</a>
+                <a href="membros.html" onmouseover="submenuMembro()" onfocus="submenuMembro()" id="botao-membros" class="over-sublinha">Membros</a>
+                <a href="#contato" class="over-sublinha">Contato</a>
             </div>
-            <div id="botão-menu">
-                <label for="barra-menu"><i class="fa fa-bars" id="barras" style="transform: rotate(0deg);"></i></label>
-                <input type="checkbox" name="barra-menu" id="barra-menu" onchange="menuMobile()">
+
+            <div id="menu-barras-mobile" style="right: 3%;">
+                <label for="barra-menu"><i class="fa fa-bars" id="barras" style="transform: rotate(0deg);color: #000;"></i></label>
+                <input type="checkbox" name="barra-menu" id="barra-menu">
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <article>
         <header>
             <div class="image-header">
