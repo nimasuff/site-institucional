@@ -277,7 +277,11 @@ body{
         color: var(--cor-branco);
         letter-spacing: .15rem;
     }
+    #e-mail .sublinhado{
+        width: 80%;
+    }
     #e-mail p{
+        font-size: var(--fonte-tamanho-mobile-pequeno2);
         text-align: center;
         width: 80%;
         font-weight: 600;
@@ -486,6 +490,9 @@ body{
     #e-mail{
         width: 40%;
     }
+        #e-mail p{
+            font-size: var(--fonte-tamanho-desktop-pequno);
+        }
         .newsletter-imagem img{
             height: 70vh;
         }
