@@ -1,0 +1,126 @@
+
+
+#projetos{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: var(--cor-branco);
+}
+    #projetos #titulo-projetos{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 40vh;
+        margin-bottom: 2rem;
+
+        transition: height 300ms ease;
+    }
+        #titulo-projetos h2{
+            height: 20vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--fonte-principal);
+            font-size: calc(2vw + 1rem);
+            letter-spacing: .3rem;
+            text-transform: uppercase;
+        }
+        #titulo-projetos p::after{
+            content: "";
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            height: 1px;
+            width: 30%;
+            background-color: var(--cor-preto);
+            margin: 0 auto;
+        }
+    #galeria-projetos{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        height: 100%;
+        
+    }
+        .linha-projeto{
+            display: flex;
+            flex-direction: row;
+            height: calc(100vh / 3);
+            width: 100%;
+            background-color: transparent;
+
+            transition: height 250ms ease;
+        }
+        .linha-projeto:hover{
+            height: calc(100vh / 1.5);
+        }
+            .projeto{
+                width: calc(100% / 4);
+                height: 97%;
+                background-color: var(--cor-verder);
+                margin-left: .05rem;
+                margin-right: .05rem;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                transition: width 400ms ease;
+            }
+            .projeto:hover{
+                width: calc(100% / 2);
+                background-color: var(--cor-preto);
+                color: var(--cor-branco);
+
+                transition: all 650ms ease;
+            }   
+                .projeto article{
+                    background-color: transparent;
+                    margin: 1rem;
+                    overflow-y: hidden;
+                }
+                    .projeto article h4{
+                        font-size: var(--fonte-tamanho-mobile-grande);
+                        font-family: var(--fonte-principal);
+                        color: var(--cor-branco);
+                        text-align: center;
+                        margin-bottom: .5rem;
+                        text-transform: uppercase;
+                    }
+                    .projeto:hover h4{
+                        text-transform: initial;
+                    }
+                    .projeto article p{
+                        text-align: justify;
+                        text-indent: 2rem;
+                        font-size: var(--fonte-tamanho-desktop-pequno);
+                        font-family: var(--fonte-principal);
+                        font-weight: 300;
+                        display: flex;
+                    }
+                .projeto .especificações{
+                    background-color: transparent;
+                    margin: .5rem;
+                
+                    flex-direction: column;
+                    justify-content: space-around;
+                }   
+                    .especificações p{
+                        font-family: var(--fonte-principal);
+                        font-size: var(--fonte-tamanho-desktop-pequno);
+                        overflow-y: hidden;
+                        color: var(--cor-verder);
+                    }
+                    .especificações p a.link{
+                        text-decoration: none;
+                        font-style: normal;
+                        color: var(--cor-verder);
+                        font-family: var(--fonte-principal);
+                        overflow-y: hidden;
+                    }
