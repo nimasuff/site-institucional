@@ -16,7 +16,18 @@ barraMenu.addEventListener('change',function(){
         barras.style.color = '#000';
     }
 })
-
+// faz o menu do top sumir ao rolar a página nas telas grandes
+let posicaoPaginaInicial = window.pageYOffset;
+document.getElementById('menu').style.top = '0';
+window.onscroll = function(){
+    let posicaoPaginaAtual = window.pageYOffset;
+    if (posicaoPaginaInicial > posicaoPaginaAtual){
+        document.getElementById('menu').style.top = '0';
+    } else{
+        document.getElementById('menu').style.top = '-70px';
+    }
+    posicaoPaginaInicial = posicaoPaginaAtual;
+}
 
 
 // faz o slide do projeto ficar maior e menor conforme o movimento do mouse, e faz aparecer o restante do conteudo

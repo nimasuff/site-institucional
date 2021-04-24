@@ -2,17 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
-    --cor-primaria-clara: #fff;
-    --cor-destaque: rgba(110, 140, 2, .95);
-    --cor-destaque-darker: rgba(95, 121, 1, .95);
-    --cor-cinza: rgba(191, 191, 191, .6);
-    --cor-primaria-escura: #000;
-
+    --cor-preto: #000;
+    --cor-verder: rgba(110, 140, 2, 1); /*#6E8C02*/
     --cor-rosa: rgba(255,101,132,1);
     --cor-roxo: rgba(63,61,86,1);
     --cor-roxo2: rgba(47,46,65,1);
     --cor-cinza: rgba(168,168,168,1);
     --cor-cinza2: rgba(242, 242, 242,1);
+    --cor-branco: #fff;
     
     --cor-gradiente-cinza: linear-gradient(to left, #2c3e50, #bdc3c7);
 
@@ -33,8 +30,8 @@
 }
 
 ::selection{
-    background-color: var(--cor-destaque);
-    color: var(--cor-primaria-clara);
+    background-color: var(--cor-verder);
+    color: var(--cor-branco);
 }
 
 *{
@@ -51,7 +48,7 @@ html{
 }
 
 body{
-    background-color: var(--cor-primaria-clara);
+    background-color: var(--cor-branco);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -182,16 +179,16 @@ body{
         #titulo-si p{
             font-size: var(--fonte-tamanho-mobile-pequeno);
         }
-        .botao-contato{
+        .call-to-action{
             margin: .5rem 0;
         }
-            .botao-envio{
+            .botao-contato{
                 background-color: transparent;
                 border: 2px var(--cor-roxo2) solid;
                 border-radius: .2rem;
                 padding: .4rem 0;
             }
-                .botao-envio a{
+                .botao-contato a{
                     padding: 1rem;
                     font-weight: 900;
                     background-color: transparent;
@@ -201,8 +198,8 @@ body{
                         background-color 200ms ease-in,
                         color 300ms ease-in;
                 }
-                .botao-envio a:hover,
-                .botao-envio a:focus{
+                .botao-contato a:hover,
+                .botao-contato a:focus{
                     background-color: var(--cor-roxo2);
                     color: var(--cor-rosa);
                 }
@@ -214,7 +211,6 @@ body{
 #sobre{
     width: 90%;
     margin: 0 auto;
-
 }
         h2{
             font-size: var(--fonte-tamanho-mobile-grande2);
@@ -230,12 +226,12 @@ body{
             .principio h3{
                 font-size: var(--fonte-tamanho-mobile-grande3);
                 margin: .5rem 2rem;
-                color: var(--cor-destaque);
+                color: var(--cor-verder);
             }
             .principio ol{
-                border-left: 4px solid var(--cor-destaque);
+                border-left: 4px solid var(--cor-verder);
                 background-color: var(--cor-cinza2);
-                padding: 1rem 2rem;
+                padding: 1rem 1.5rem;
                 margin: 1rem 0;
                 list-style-type: upper-roman;
                 list-style-position: inside;
@@ -243,23 +239,106 @@ body{
                 font-size: var(--fonte-tamanho-mobile-pequeno2);
             }
             .principio ol li{
-                margin: .8rem 0;
+                margin: .8rem 1rem;
             }
         .image-sobre{
             display: flex;
             justify-content: center;
+            align-items: center;
             margin: .5rem 0;
         }
             #procurando{
                 width: 90%;
             }
+/*________________________________________________*/
+/*FORMATAÇÃO DA DIV E-MAIL (MOBILE) */
+.newsletter-imagem{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+    .newsletter-imagem img{
+        width: 100%;
+    }
+#e-mail{
+    width: 90%;
+    height: 50vh;
+    margin: 1rem auto;
+    border-radius: .3rem;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: var(--cor-roxo2);
+}
+    #e-mail h2{
+        color: var(--cor-branco);
+        letter-spacing: .15rem;
+    }
+    #e-mail p{
+        text-align: center;
+        width: 80%;
+        font-weight: 600;
+        color: var(--cor-branco);
+    }
+    input[type="email"]{
+        padding: .5rem 1rem;
+        width: 80%;
+        height: 3vh;
+        background-color: var(--cor-cinza2);
+        border: none;
+        border-bottom: solid var(--cor-rosa) 2px;
+
+        transition: 
+            background-color 300ms ease-in,
+            color 300ms ease-in;
+    }
+        input[type="email"]:hover::-webkit-input-placeholder,
+        input[type="email"]:focus::-webkit-input-placeholder,
+        input[type="email"]:hover::placeholder,
+        input[type="email"]:focus::placeholder{
+            color: var(--cor-cinza2);
             
+        }
+        input[type="email"]:hover,
+        input[type="email"]:focus{
+            color: var(--cor-rosa);
+            font-weight: 900;
+        }
+    input[type='submit']{
+        width: 20%;
+        padding: .5rem 1rem;
+        border: solid var(--cor-cinza2) 2px;
+        border-radius: .3rem;
+        color: var(--cor-rosa);
+        font-weight: 900;
+        background-color: transparent;
+        cursor: pointer;
+
+        transition: 
+            all 300ms ease-in;
+    }
+    input[type='submit']:hover,
+    input[type="submit"]:focus{
+        background-color: var(--cor-cinza2);
+        text-transform: uppercase;
+        letter-spacing: .05rem;
+        color: var(--cor-verder);
+    }
+
+
+/* FORMATAÇÃO DA VERSÃO DESKTOP */  
 @media (min-width: 700px){
 /* MENU (DESKTOP) */
     #menu{
         position: fixed;
+        top: -70px;
         z-index: 1000;
         width: 100%;
+
+        transition: top 300ms ease-in;
     }
         #menu #menu-navegacao{
             height: 12vh;
@@ -284,6 +363,14 @@ body{
                     font-weight: 900;
                     font-size: var(--fonte-tamanho-desktop-menu);
                     color: var(--cor-roxo2);
+
+                    transition: 
+                        background-color 300ms ease-in,
+                        color 300ms ease-in;
+                }
+                #menu-links a:hover{
+                    background-color: var(--cor-roxo2);
+                    color: var(--cor-rosa);
                 }
             #menu-navegacao #menu-barras-mobile{
                 display: none;
@@ -291,7 +378,7 @@ body{
 /*________________________________________________*/
 /* DISCORVERY SECTION (DESKTOP)*/
     #discovery{
-        height: 90vh;
+        height: 94vh;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -300,7 +387,8 @@ body{
         background-repeat: no-repeat;
         background-position-x: 70%;
         background-position-y: 100%;
-        background-size: 32rem;
+        background-size: 35rem;
+
     }
         #discovery .image-explan{
             display: none;
@@ -359,108 +447,51 @@ body{
                     }
                     .icones-rede .fa-github::after{
                         content: '@nimasuff';
-                        top: .3rem;
+                        top: .2rem;
                     }
                     .icones-rede .fa-github:hover::after{
                         right: 0rem;
                     }
                     .icones-rede .fa-linkedin::after{
                         content: '@nimasuff';
-                        top: 3.3rem;
+                        top: 3.5rem;
                     }
                     .icones-rede .fa-linkedin:hover::after{
                         right: 0rem;
                     }
                     .icones-rede .fa-envelope::after{
                         content: 'labnimas.esc@id.uff.br';
-                        top: 6.8rem;
+                        top: 6.9rem;
                     }
                     .icones-rede .fa-envelope:hover::after{
                         right: 0rem;
                     }
 /*___________________________________________________________*/
 /* SECTION SOBRE (DESKTOP)*/
-
-}
-
-/*__________________________________________________*/
-/* FORMATAÇÃO DO E-MAIL */
-#e-mail{
+    #procurando{
+        height: 70vh;
+    }
+/*_______________________________________________________*/
+/* SECTION NEWSLETTER (DESKTOP) */
+#newsletter{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    background-color: var(--cor-destaque);
-    height: 30vh;
+    width: 90%;
+    margin: 0 auto;
 }
-    #e-mail p{
-        font-family: var(--fonte-principal);
-        font-size: var(--fonte-tamanho-desktop-pequno);
-        color: var(--cor-primaria-clara);
-        height: min-content;
-        word-wrap: break-word;
-        text-align: center;
+    .newsletter-imagem{
+        width: 40%;
     }
-    #e-mail form{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: 60%;
-        height: 22%;
-    }
-        #e-mail input[type="email"]{
-            display: flex;
-            height: 100%;
-            width: 65%;
-            padding: 0 1rem;
-
-            border: none;
-            box-sizing: border-box;
-        }
-        #e-mail input[type="email"]:focus,
-        #e-mail input[type="email"]:hover,
-        #e-mail input[type="email"]:focus::placeholder{
-            background-color: var(--cor-primaria-escura);
-            color: var(--cor-destaque);
-        }
-        #e-mail input[type="submit"]{
-            width: 5rem;
-            height: 100%;
-            width: 25%;
-
-            border: none;
-            text-transform: uppercase;
-            background-color: var(--cor-primaria-escura);
-            color: var(--cor-primaria-clara);
-            font-size: var(--fonte-tamanho-desktop-pequno);
-            text-decoration: none;
-            transition: 
-                all 300ms ease;
-        }
-        #e-mail input[type="submit"]:hover, 
-        #e-mail input[type="submit"]:focus{
-            cursor: pointer;
-            width: 35%;
-        }
-
-@media (max-width: 700px){
     #e-mail{
-        justify-content: space-evenly;
-        height: 25vh;
+        width: 40%;
     }
-    #e-mail form {
-        width: 90%;
-    }
-    #e-mail input[type="email"]{
-        width: 65%;
-    }
-    #e-mail input[type="submit"]{
-        width: 20%;
-    }
+        .newsletter-imagem img{
+            height: 70vh;
+        }
+/*_____________________________________*/
 }
-/*___________________________*/
+
 /* FORMATAÇÃO SEÇÃO PROJETOS */
 #projetos{
     width: 100%;
@@ -468,7 +499,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-color: var(--cor-primaria-clara);
+    background-color: var(--cor-branco);
 }
     #projetos #titulo-projetos{
         justify-content: center;
@@ -499,7 +530,7 @@ body{
             position: absolute;
             height: 1px;
             width: 30%;
-            background-color: var(--cor-primaria-escura);
+            background-color: var(--cor-preto);
             margin: 0 auto;
         }
     #galeria-projetos{
@@ -525,7 +556,7 @@ body{
             .projeto{
                 width: calc(100% / 4);
                 height: 97%;
-                background-color: var(--cor-destaque);
+                background-color: var(--cor-verder);
                 margin-left: .05rem;
                 margin-right: .05rem;
 
@@ -537,8 +568,8 @@ body{
             }
             .projeto:hover{
                 width: calc(100% / 2);
-                background-color: var(--cor-primaria-escura);
-                color: var(--cor-primaria-clara);
+                background-color: var(--cor-preto);
+                color: var(--cor-branco);
 
                 transition: all 650ms ease;
             }   
@@ -550,7 +581,7 @@ body{
                     .projeto article h4{
                         font-size: var(--fonte-tamanho-mobile-grande);
                         font-family: var(--fonte-principal);
-                        color: var(--cor-primaria-clara);
+                        color: var(--cor-branco);
                         text-align: center;
                         margin-bottom: .5rem;
                         text-transform: uppercase;
@@ -577,12 +608,12 @@ body{
                         font-family: var(--fonte-principal);
                         font-size: var(--fonte-tamanho-desktop-pequno);
                         overflow-y: hidden;
-                        color: var(--cor-destaque);
+                        color: var(--cor-verder);
                     }
                     .especificações p a.link{
                         text-decoration: none;
                         font-style: normal;
-                        color: var(--cor-destaque);
+                        color: var(--cor-verder);
                         font-family: var(--fonte-principal);
                         overflow-y: hidden;
                     }
@@ -596,7 +627,7 @@ body{
     align-items: center;
     justify-content: center;
 
-    background: var(--cor-primaria-clara);
+    background: var(--cor-branco);
 }
 #parceiros .container{
     display: flex;
@@ -617,7 +648,7 @@ body{
         .titulo-parceiro h3{
             font-size: var(--fonte-tamanho-mobile-grande);
             font-family: var(--fonte-principal);
-            color: var(--cor-primaria-escura);
+            color: var(--cor-preto);
             text-align: center;
             text-transform: uppercase;
             letter-spacing: .3rem;
@@ -743,7 +774,7 @@ body{
     #contato #barra-esquerda{
         width: 30%;
         height: 100%;
-        background-color: var(--cor-destaque);
+        background-color: var(--cor-verder);
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -770,7 +801,7 @@ body{
             align-items: center;
         }
         #contato form label{
-            color: var(--cor-primaria-escura);
+            color: var(--cor-preto);
             font-family: var(--fonte-principal);
             font-size: calc(1vw + .5rem);
             width: 50%;
@@ -782,7 +813,7 @@ body{
             font-family: var(--fonte-principal);
             float: right;
             border: none;
-            border-bottom: solid 3px var(--cor-primaria-escura);
+            border-bottom: solid 3px var(--cor-preto);
             border-radius: 0;
 
             transition: background-color 250ms ease;
@@ -790,8 +821,8 @@ body{
         #contato form input:hover,
         #contato form input:focus,
         #contato form input:focus::placeholder{
-            background-color: var(--cor-primaria-escura);
-            color: var(--cor-destaque);
+            background-color: var(--cor-preto);
+            color: var(--cor-verder);
         }
         #contato .comentario{
             display: flex;
@@ -808,19 +839,19 @@ body{
             box-sizing: content-box;
             border-radius: 0;
             border: none;
-            border-bottom: solid 3px var(--cor-primaria-escura);
+            border-bottom: solid 3px var(--cor-preto);
             transition: background-color 250ms ease-out;   
         }
         #contato form textarea:hover,
         #contato form textarea:focus,
         #contato form textarea:focus::placeholder{
-            background-color: var(--cor-primaria-escura);
-            color: var(--cor-destaque);
+            background-color: var(--cor-preto);
+            color: var(--cor-verder);
         }
         #contato form input[type="submit"]{
             width: 30%;
-            background-color: var(--cor-primaria-escura);
-            color: var(--cor-primaria-clara);
+            background-color: var(--cor-preto);
+            color: var(--cor-branco);
             font-size: calc(1vw + .5rem);
             text-transform: uppercase;
             border: none;
@@ -853,7 +884,7 @@ body{
                 text-align: center;
                 border-top: none;
                 text-transform: uppercase;
-                color: var(--cor-primaria-escura);
+                color: var(--cor-preto);
             }
         #contato #forms-comentario form{
             width: 90%;
@@ -881,7 +912,7 @@ body{
 footer{
     height: 70vh;
     width: 100%;
-    background: linear-gradient(to left, var(--cor-destaque), var(--cor-cinza));
+    background: linear-gradient(to left, var(--cor-verder), var(--cor-cinza));
     display: flex;
     flex-direction: column;
 }
@@ -893,7 +924,7 @@ footer{
         align-items: center;
     }
         #header a{
-            color: var(--cor-primaria-escura);
+            color: var(--cor-preto);
             margin: 0 .5rem;
             line-height: 7%;
         }
@@ -901,7 +932,7 @@ footer{
             font-size: calc(1vw + .6rem);
         }
         #header i:hover{
-            color: var(--cor-destaque-darker);
+            color: var(--cor-verder-darker);
         }
         #header p{
             font-family: var(--fonte-principal);
@@ -935,7 +966,7 @@ footer{
             text-align: left;
             margin-left: 3rem;
             line-height: 1.7rem;
-            color: var(--cor-primaria-escura);
+            color: var(--cor-preto);
             text-decoration: none;
             font-family: var(--fonte-principal);
             font-size: calc(.3vw + .6rem);
@@ -972,7 +1003,7 @@ footer{
             }
                 .linha-dados a{
                     text-decoration: none;
-                    color: var(--cor-primaria-escura);
+                    color: var(--cor-preto);
                     width: min-content;
                     height: auto;
                     position: relative;
@@ -984,7 +1015,7 @@ footer{
                     position: absolute;
                     left: 0;
                     bottom: 0;
-                    background: var(--cor-primaria-escura);
+                    background: var(--cor-preto);
 
                     transform: scaleX(0);
                     transform-origin: right;
