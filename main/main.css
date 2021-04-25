@@ -5,12 +5,9 @@
     --cor-preto: #000;
     --cor-verder: rgba(110, 140, 2, 1); /*#6E8C02*/
     --cor-rosa: rgba(255,101,132,1);
-    --cor-roxo: rgba(63,61,86,1);
-    --cor-roxo2: rgba(47,46,65,1);
+    --cor-roxo: rgba(47,46,65,1);
     --cor-cinza: rgba(242, 242, 242,1);
     --cor-branco: #fff;
-    
-    --cor-gradiente-cinza: linear-gradient(to left, #2c3e50, #bdc3c7);
 
     --fonte-principal: 'Open Sans', sans-serif;
 
@@ -183,7 +180,7 @@ body{
         }
             .botao-contato{
                 background-color: transparent;
-                border: 2px var(--cor-roxo2) solid;
+                border: 2px var(--cor-roxo) solid;
                 border-radius: .2rem;
                 padding: .4rem 0;
             }
@@ -192,14 +189,14 @@ body{
                     font-weight: 900;
                     background-color: transparent;
                     text-decoration: none;
-                    color: var(--cor-roxo2);
+                    color: var(--cor-roxo);
                     transition: 
                         background-color 200ms ease-in,
                         color 300ms ease-in;
                 }
                 .botao-contato a:hover,
                 .botao-contato a:focus{
-                    background-color: var(--cor-roxo2);
+                    background-color: var(--cor-roxo);
                     color: var(--cor-rosa);
                 }
 #redes-sociais{
@@ -213,7 +210,7 @@ body{
 }
         h2{
             font-size: var(--fonte-tamanho-mobile-grande2);
-            color: var(--cor-roxo2);
+            color: var(--cor-roxo);
             text-align: center;
             text-transform: uppercase;
             margin: .5rem 0;
@@ -275,7 +272,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
 
-    background-color: var(--cor-roxo2);
+    background-color: var(--cor-roxo);
 }
     #e-mail h2{
         color: var(--cor-branco);
@@ -373,7 +370,7 @@ body{
 }
     #form-contato{
         width: 100%;
-        background-color: var(--cor-roxo2);
+        background-color: var(--cor-roxo);
         border-radius: .3rem;
 
         display: flex;
@@ -471,7 +468,7 @@ body{
         }
             .info-contato a{
                 text-decoration: none;
-                color: var(--cor-roxo2);
+                color: var(--cor-roxo);
                 width: auto;
                 font-weight: 900;
                 position: relative;
@@ -493,7 +490,7 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    color: var(--cor-roxo2);
+    color: var(--cor-roxo);
     font-weight: 900;
     height: 10vh;
     background-color: var(--cor-rosa);
@@ -524,7 +521,7 @@ footer{
             position: relative;
         }
         .linha2 .over-sublinha::after{
-            background-color: var(--cor-roxo2);
+            background-color: var(--cor-roxo);
         }
 /*__________________________________________*/
 /* FORMATAÇÃO DA VERSÃO DESKTOP */  
@@ -560,14 +557,14 @@ footer{
                     line-height: 12vh;
                     font-weight: 900;
                     font-size: var(--fonte-tamanho-desktop-menu);
-                    color: var(--cor-roxo2);
+                    color: var(--cor-roxo);
 
                     transition: 
                         background-color 300ms ease-in,
                         color 300ms ease-in;
                 }
                 #menu-links a:hover{
-                    background-color: var(--cor-roxo2);
+                    background-color: var(--cor-roxo);
                     color: var(--cor-rosa);
                 }
             #menu-navegacao #menu-barras-mobile{
@@ -635,7 +632,7 @@ footer{
                         font-size: 1.8rem;
                         font-family: var(--fonte-principal);
                         transition: right 250ms ease-in;
-                        background-color: var(--cor-roxo2);
+                        background-color: var(--cor-roxo);
                         color: var(--cor-rosa);
                         padding: .4rem .6rem;
                         border-radius: .4rem;
