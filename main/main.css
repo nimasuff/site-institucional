@@ -458,31 +458,60 @@ body{
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-            height: 30vh;
+            height: 36vh;
 
             width: 90%;
             margin: .5rem auto;
             text-align: center;
-            font-size: var(--fonte-tamanho-mobile-pequeno2);
             font-style: normal;
         }
-            .info-contato a{
-                text-decoration: none;
-                color: var(--cor-roxo);
-                width: auto;
-                font-weight: 900;
-                position: relative;
-            }
-            .info-contato a:nth-of-type(2){
+            address > .dado-contato{
+                width: 99%;
+                height: 100%;
+                padding: .3rem 0;
+                margin-bottom: .4rem;
+                background-color: var(--cor-cinza);
+
                 display: flex;
+                flex-direction: row;
+                justify-content: space-between;
                 align-items: center;
+            }
+            address > .dado-contato:nth-child(2),
+            address > .dado-contato:first-child{
+                flex: 1 1 40px;
+            }
+            address > .dado-contato:last-child{
+                flex-direction: column;
                 justify-content: space-evenly;
             }
-            .info-contato a .fa-whatsapp{
-                margin-right: .5rem;
-                color: var(--cor-verder);
-                font-size: var(--fonte-tamanho-desktop-grande);
-            }
+                .dado-contato .dado-tipo{
+                    margin-left: .5rem;
+                    font-size: var(--fonte-tamanho-mobile-pequeno);
+                }
+                .dado-atual{
+                    margin-right: .5rem;
+                    text-align: center;
+                }
+                    .dado-atual a{
+                        display: flex;
+                        text-decoration: none;
+                        font-size: var(--fonte-tamanho-mobile-pequeno);
+                        color: var(--cor-roxo);
+                        font-weight: 400;
+                        position: relative;
+                    }
+                    .dado-contato:nth-child(2) .dado-atual a .fa{
+                        display: flex;
+                        align-items: center;
+                        font-size: var(--fonte-tamanho-mobile-pequeno);
+                        margin-right: .3rem;
+                    }
+                    .dado-contato:nth-child(3) .dado-atual{
+                        margin: 0 .8rem;
+                    }
+
+                
 /*______________________________________*/
 /* FOOTER - MOBILE */
 footer{
@@ -509,6 +538,7 @@ footer{
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-decoration: none;
         }
     footer .sublinhado{
         width: 30%;
@@ -714,8 +744,12 @@ footer{
             height: 50%;
         }
         .mapa-info-contato address{
-            height: 50%;
+            height: 40%;
         }
+            address > .dado-contato{
+                width: 90%;
+                font-size: var(--fonte-tamanho-desktop-pequno);
+            }
 /*_______________________________*/
 /* FOOTER DESKTOP */
 footer{
