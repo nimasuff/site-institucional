@@ -1,6 +1,17 @@
-// faz o menu lateral aparecer, em telas menores
-const barraMenu = document.getElementById('barra-menu')
-barraMenu.addEventListener('change',function(){
+// faz o menu lateral aparecer e desaparacer, em telas menores
+const barraMenu = document.getElementById('barra-menu');
+barraMenu.addEventListener('change',showHideMenu);
+window.addEventListener('mouseout',hideMenu)
+function hideMenu(){
+    const divMenuMobile = document.getElementById('menu-barras-mobile');
+    const divLinks = document.getElementById('menu-links');
+    const barras = document.getElementById('barras');
+        divMenuMobile.style.right = '3%';
+        divLinks.style.right = '-100%';
+        barras.style.transform = "rotate(0deg)";
+        barras.style.color = '#000';
+}
+function showHideMenu(){
     const divMenuMobile = document.getElementById('menu-barras-mobile');
     const divLinks = document.getElementById('menu-links');
     const barras = document.getElementById('barras');
@@ -15,7 +26,7 @@ barraMenu.addEventListener('change',function(){
         barras.style.transform = "rotate(0deg)";
         barras.style.color = '#000';
     }
-})
+}
 // faz o menu do top sumir ao rolar a página nas telas grandes
 let posicaoPaginaInicial = window.pageYOffset;
 document.getElementById('menu').style.top = '0';
@@ -28,6 +39,3 @@ window.onscroll = function(){
     }
     posicaoPaginaInicial = posicaoPaginaAtual;
 }
-
-
-// faz o slide do projeto ficar maior e menor conforme o movimento do mouse, e faz aparecer o restante do conteudo

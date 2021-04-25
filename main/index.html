@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TÍTULO -->
     <title>NIMAS | UFF</title>
-    <!-- LINKS -->
-    <link rel="shortcut icon" href="img/logo nimas sem uff.png" type="image/x-icon">
+    <!-- FAV ICON -->
+    <link rel="shortcut icon" href="img-main/nav-bar/logo nimas sem uff.png" type="image/x-icon">
+    <!-- LINK PARA FOLHAS DE ESTILO -->
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- LINK FONTE DO SITE -->
@@ -28,7 +29,7 @@
                 <a href="#discovery" class="over-sublinha">Início</a>
                 <a href="#sobre" class="over-sublinha">Sobre</a>
                 <a href="#projetos" class="over-sublinha">Projetos</a>
-                <a href="../membros/membros.html" onmouseover="submenuMembro()" onfocus="submenuMembro()" id="botao-membros" class="over-sublinha">Membros</a>
+                <a href="../membros/membros.html" id="botao-membros" class="over-sublinha">Membros</a>
                 <a href="#contato" class="over-sublinha">Contato</a>
             </div>
 
@@ -58,7 +59,7 @@
             <div class="icones-rede">
                 <a href="https://github.com/nimasuff" target="_blank"><i class="fa fa-github"></i></a>
                 <a href="https://www.linkedin.com/company/nimasuff/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="mailto:labnimas.esc@id.uff.br"><i class="fa fa-envelope"></i></a>
+                <a href="mailto:labnimas.esc@id.uff.br?subject=Comentário | SI do NIMAS"><i class="fa fa-envelope"></i></a>
             </div>
         </aside>
     </section>
@@ -109,102 +110,93 @@
             <h2>Newsletter</h2>
             <div class="sublinhado"></div>
             <p>Insira seu melhor e-mail e <br>fique por dentro do NIMAS:</p>
-            <input type="email" class="input" name="email" placeholder="e-mail" maxlength="40" required>
+            <input type="email" class="formatacao-input" name="email" placeholder="e-mail" maxlength="40" required>
             <input type="submit" value="Enviar">
         </form>
     </section>
     <!-- SECTION PARCEIROS DO NIMAS -->
     <section id="parceiros">
-        <div class="container">
-            <div class="titulo-parceiro">
-                <h3>Parceiros</h3>
+        <h2>Parceiros</h2>
+        <div class="sublinhado"></div>
+        <div id="logo-parceiros">
+            <div class="parceiro">
+                <img src="img-main/parceiros/cired.png" alt="parceiro cired">
             </div>
-            <div class="logo-parceiros">
-                <div class="split">
-                    <div class="parceiro">
-                        <img src="img-main/parceiros/cired.png" alt="parceiro cired">
-                    </div>
-                    <div class="parceiro">
-                        <img src="img-main/parceiros/lima.png" alt="parceiro lima">
-                    </div>
-                    <div class="parceiro">
-                        <img src="img-main/parceiros/National_Institute_of_Technology_Trichy_Logo.png" alt="parceiro indiado">
-                    </div>
-                    <div class="parceiro">
-                        <img src="img-main/parceiros/nemo.png" alt="parceiro nemo">
-                    </div>
-                </div>
-                <div class="split">
-                    <div class="parceiro">
-                        <img src="img-main/parceiros/logo uff.png" alt="parceiro UFF">
-                    </div>
-                    <div class="parceiro">
-                        <img src="img-main/parceiros/ppe.png" alt="parceiro ppe">
-                    </div>
-                    <div class="parceiro">
-                        <img src="img-main/parceiros/prefeitura rj.png" alt="parceiro prefeitura do RJ">
-                    </div>
-                    <div class="parceiro">
-                        <img src="img-main/parceiros/cenbio.png" alt="parceiro cenbio">
-                    </div>
-                </div>
+            <div class="parceiro">
+                <img src="img-main/parceiros/lima.png" alt="parceiro lima">
+            </div>
+            <div class="parceiro">
+                <img src="img-main/parceiros/National_Institute_of_Technology_Trichy_Logo.png" alt="parceiro indiado">
+            </div>
+            <div class="parceiro">
+                <img src="img-main/parceiros/nemo.png" alt="parceiro nemo">
+            </div>
+            <div class="parceiro">
+                <img src="img-main/parceiros/logo uff.png" alt="parceiro UFF">
+            </div>
+            <div class="parceiro">
+                <img src="img-main/parceiros/ppe.png" alt="parceiro ppe">
+            </div>
+            <div class="parceiro">
+                <img src="img-main/parceiros/prefeitura rj.png" alt="parceiro prefeitura do RJ">
+            </div>
+            <div class="parceiro">
+                <img src="img-main/parceiros/cenbio.png" alt="parceiro cenbio">
             </div>
         </div>
     </section>
     <!-- SECTION CONTATO -->
     <section id="contato">
-        <h2>Contato</h2>
-        <div id="forms-comentario">
-            <div id="barra-esquerda">
-                <img src="img-main/contato/support_active.svg" alt="Imagem de chat">
+        <form action="#" method="POST" id="form-contato">
+            <h2>Contato</h2>
+            <div class="sublinhado"></div>
+            <div class="image-contato">
+                <img src="img-main/contato/support_active.png" alt="Imagem de chat">
             </div>
-            <form action="#" method="POST">
-                <div class="linha">
-                    <label for="c-nome">Nome</label>
-                    <input type="text" name="c-nome" id="c-nome" placeholder="seu nome" maxlength="30">
-                </div>
-                <div class="linha">
-                    <label for="c-sobrenome">Sobrenome</label>
-                    <input type="text" name="c-sobrenome" id="c-sobrenome" placeholder="seu sobrenome" maxlength="30">
-                </div>
-                <div class="linha">
-                    <label for="c-email">E-mail</label>
-                    <input type="email" name="c-email" id="c-email" placeholder="seu e-mail" maxlength="40">
-                </div>
-                <div class="comentario">
-                    <label for="comentario">Comentário</label>
-                    <textarea name="comentario" id="comentario" cols="10" rows="5" placeholder="seu comentário deve ter até 144 caracteres" maxlength="144"></textarea>
-                </div>
-                <input type="submit" value="Enviar">
-            </form>
+        
+            <div class="linha-form">
+                <label for="c-nome">Nome</label>
+                <input type="text" name="c-nome" id="c-nome" class="formatacao-input" placeholder="seu nome" maxlength="30">
+            </div>
+            <div class="linha-form">
+                <label for="c-sobrenome">Sobrenome</label>
+                <input type="text" name="c-sobrenome" id="c-sobrenome" class="formatacao-input" placeholder="seu sobrenome" maxlength="30">
+            </div>
+            <div class="linha-form">
+                <label for="c-email">E-mail</label>
+                <input type="email" name="c-email" id="c-email" class="formatacao-input" placeholder="seu e-mail" maxlength="40">
+            </div>
+            <div class="comentario-form">
+                <label for="comentario">Comentário</label>
+                <textarea name="comentario" id="comentario" cols="15" rows="5" placeholder="seu comentário deve ter até 144 caracteres" maxlength="144"></textarea>
+            </div>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <div class="mapa-info-contato">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d818.6054893208791!2d-43.13297010574935!3d-22.898074527982097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9983d47745f783%3A0x2321fc9b4e48f3a5!2sUFF%20-%20Faculdade%20de%20Economia!5e0!3m2!1spt-BR!2sbr!4v1618105183507!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <address class="info-contato">
+                <a href="mailto:labnimas.esc@id.uff.br?subject=Comentário | SI do NIMAS" class="over-sublinha" target="_blank">labnimas.esc@id.uff.br</a>
+                <a href="https://wa.me/5521993002017?text=Olá,%20vim%20pelo%20site%20do%20NIMAS." class="over-sublinha" target="_blank">
+                    <i class="fa fa-whatsapp"></i>
+                    (21) 99300-2017
+                </a>
+                <p><strong>Universidade Federal Fluminense</strong> <br>– Campus Gragoatá - Rua Prof. Marcos Valdemar de Freitas Reis, s/n, Bloco F – Sala 414 - São Domingos, Niterói - RJ, 24210-200</p>
+            </address>
         </div>
     </section>
     <!-- SECTION FOOTER -->
     <footer>
-        <div id="header">
-            <a href="tel:21993002017"><i class="fa fa-phone-square"></i></a>
-            <a href="mailto:labnimas.esc@id.uff.br?subject=Comentário | SI do NIMAS"><i class="fa fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/company/nimas-n%C3%BAcleo-de-inova%C3%A7%C3%A3o-meio-ambiente-e-sociedade-da-faculdade-de-economia-da-uff/mycompany/?viewAsMember=true" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <div class="linha1">
+            <a href="https://wa.me/5521993002017?text=Olá,%20vim%20pelo%20site%20do%20NIMAS." class="link" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            <a href="mailto:labnimas.esc@id.uff.br?subject=Comentário | SI do NIMAS" target="_blank"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/company/nimasuff/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/nimasuff" target="_blank"><i class="fa fa-github"></i></a>
             <p>NIMAS &copy;</p>
         </div>
-        <div id="conteudo">
-            <div id="listas">
-                    <a href="#principal" class="link">Início</a>
-                    <a href="#sobre" class="link">Sobre</a>
-                    <a href="#projetos" class="link">Projetos</a>
-                    <a href="membros.html" class="link">Membros</a>
-                    <a href="#contato" class="link">Contato</a>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d818.6054893208791!2d-43.13297010574935!3d-22.898074527982097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9983d47745f783%3A0x2321fc9b4e48f3a5!2sUFF%20-%20Faculdade%20de%20Economia!5e0!3m2!1spt-BR!2sbr!4v1618105183507!5m2!1spt-BR!2sbr" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div id="dados">
-            <address>
-                <p>Universidade Federal Fluminense – Campus Gragoatá - Rua Prof. Marcos Valdemar de Freitas Reis, s/n, Bloco F – Sala 414 - São Domingos, Niterói - RJ, 24210-200</p>
-                <div class="linha-dados">
-                    <a href="mailto:labnimas.esc@id.uff.br?subject=Comentário | SI do NIMAS" class="link">labnimas.esc@id.uff.br</a>
-                    <a href="tel:21993002017" class="link">(21)993002017</a>
-                </div>
-            </address>
+        <div class="sublinhado"></div>
+        <div class="linha2">
+           <a href="https://www.linkedin.com/in/joao-gabriel-martins/" target="_blank" class="over-sublinha"> Developed with <i class="fa fa-heart"></i> By: João Gabriel</a>
         </div>
     </footer>
     <!-- LINK PARA SCRIPTS JS -->
