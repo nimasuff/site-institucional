@@ -18,7 +18,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <header id="menu">
+        <nav id="menu-navegacao">
+            <div id="menu-logo">
+                <img src="../main/img-main/nav-bar/logo nimas sem uff.png" alt="Logo do NIMAS" id="logo-nimas">
+                <div class="linha-vertical"></div>
+                <img src="../main/img-main/nav-bar/logo uff.png" alt="Logo da Universidade Federal Fluminense (UFF)" id="logo-uff">
+            </div>
+            
+            <div id="menu-links" style="right: -100%;">
+                <a href="../main/index.html" class="over-sublinha">Início</a>
+                <a href="../main/index.html#sobre" class="over-sublinha">Sobre</a>
+                <a href="projetos.html" class="over-sublinha">Projetos</a>
+                <a href="../membros/membros.html" id="botao-membros" class="over-sublinha">Membros</a>
+                <a href="../main/index.html#contato" class="over-sublinha">Contato</a>
+            </div>
+
+            <div id="menu-barras-mobile" style="right: 3%;">
+                <label for="barra-menu"><i class="fa fa-bars" id="barras" style="transform: rotate(0deg);color: #000;"></i></label>
+                <input type="checkbox" name="barra-menu" id="barra-menu">
+            </div>
+        </nav>
+    </header>
     <!-- SECTION PROJECTS -->
+    <section id="secao-projetos">
+        <div class="titulo-projetos">
+            <h2>Projetos</h2>
+            <div class="sublinhado"></div>
+        </div>
+        <div class="btn-filtro">
+            <button class="botao-filtro">Todos</button>
+            <button class="botao-filtro">Finalizados</button>
+            <button class="botao-filtro">Em Andamento</button>
+        </div>
+        <!-- SEÇÃO PROJETOS -->
+        <div id="projetos-nimas">
+
+            
+        </div>
+    </section>
+    <!--
     <section id="projetos">
         <article>
             <header id="titulo-projetos" style="height: 40vh;">
@@ -122,6 +162,23 @@
             </main>
         </article>
     </section>
+    -->
+    <!-- SECTION FOOTER -->
+    <footer>
+        <div class="linha1">
+            <a href="https://wa.me/5521993002017?text=Olá,%20vim%20pelo%20site%20do%20NIMAS." class="link" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            <a href="mailto:labnimas.esc@id.uff.br?subject=Comentário | SI do NIMAS" target="_blank"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/company/nimasuff/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/nimasuff" target="_blank"><i class="fa fa-github"></i></a>
+            <p>NIMAS &copy;</p>
+        </div>
+        <div class="sublinhado"></div>
+        <div class="linha2">
+           <a href="https://www.linkedin.com/in/joao-gabriel-martins/" target="_blank" class="over-sublinha"> Developed with <i class="fa fa-heart"></i> By: JG</a>
+        </div>
+    </footer>
+    <!-- LINK PARA SCRIPTS JS -->
+<script src="../main/config.js"></script>
 <script src="projetos-app.js"></script>
 </body>
 </html>
