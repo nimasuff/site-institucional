@@ -73,7 +73,7 @@ body{
             #menu-logo .linha-vertical{
                 width: 1.5px;
                 height: 50%;
-                background-color: var(--cor-cinza);
+                background-color: var(--cor-roxo);
             }
             #menu-logo #logo-uff{
                 height: 100%;
@@ -744,10 +744,17 @@ footer{
             height: 50%;
         }
         .mapa-info-contato address{
-            height: 40%;
+            height: 45%;
         }
             address > .dado-contato{
-                width: 90%;
+                width: 65%;
+                padding: .5rem;
+                font-size: var(--fonte-tamanho-desktop-pequno);
+            }
+            .dado-atual a{
+                font-size: var(--fonte-tamanho-desktop-pequno);
+            }
+            .dado-contato .dado-tipo{
                 font-size: var(--fonte-tamanho-desktop-pequno);
             }
 /*_______________________________*/
