@@ -10,7 +10,8 @@
 
     --fonte-tamanho-desktop-grande: calc(2vw + 1rem);
     --fonte-tamanho-desktop-pequno: calc(1vw + .5rem);
-    --fonte-tamanho-desktop-menu: calc(.5vw + .5rem);
+    --fonte-tamanho-desktop-menu: calc(.5vw + .2rem);
+    --fonte-tamanho-desktop-menu-hover: calc(.5vw + .4rem);
 
     --fonte-tamanho-mobile-grande: calc(1vw + 2rem);
     --fonte-tamanho-mobile-grande2: calc(1vw + 1.5rem);
@@ -169,7 +170,7 @@
                     margin-top 100ms ease-in;
             }
             .seletor-membro:hover{
-                box-shadow: var(--cor-roxo) .4rem .3rem .4rem;
+                box-shadow: var(--cor-cinza) 1rem 1rem 2rem;
                 margin-top: 1.4rem;
             }
                 .seletor-membro .foto-perfil{

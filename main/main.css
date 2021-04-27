@@ -99,7 +99,7 @@ body{
 
                     font-size: var(--fonte-tamanho-mobile-menu);
                     
-                    letter-spacing: .2rem;
+                    letter-spacing: .1rem;
                     color: var(--cor-rosa);
                     position: relative;
                     line-height: 10vh;
@@ -586,9 +586,10 @@ footer{
             }
             #menu-navegacao #menu-links{
                 flex-direction: row;
-                width: auto;
-                height: auto;
+                width: 35rem;
+                height: 5rem;
                 justify-content: space-evenly;
+                align-items: center;
                 background-color: transparent;
                 
                 position: initial;
@@ -596,21 +597,31 @@ footer{
                 margin-left: auto;
             }
                 #menu-links .link-menu{
-                    top: 0;
-                    width: auto;
-                    height: auto;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+
+                    width: 6.5rem;
+                    height: 2rem;
                     font-weight: bold;
-                    padding: .5rem;
-                    
+                    padding: 0;
                 }
                     .link-menu a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        line-height: initial;
                         font-size: var(--fonte-tamanho-desktop-menu);
                         color: var(--cor-roxo);
-                        padding: .5rem;
-                        transition: font-size 150ms ease-in;
+                        padding: 0;
+                        transition: 
+                            font-size 150ms ease-in,
+                            letter-spacing 150ms ease-in;
                     }
                     .link-menu a:hover{
                         font-size: var(--fonte-tamanho-desktop-menu-hover);
+                        letter-spacing: .3rem;
                     }
             #menu-navegacao #menu-barras-mobile{
                 display: none;

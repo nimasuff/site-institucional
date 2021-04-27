@@ -11,7 +11,8 @@
 
     --fonte-tamanho-desktop-grande: calc(2vw + 1rem);
     --fonte-tamanho-desktop-pequno: calc(1vw + .5rem);
-    --fonte-tamanho-desktop-menu: calc(.5vw + .5rem);
+    --fonte-tamanho-desktop-menu: calc(.5vw + .2rem);
+    --fonte-tamanho-desktop-menu-hover: calc(.5vw + .4rem);
 
     --fonte-tamanho-mobile-nome-projeto: calc(1vw + .8rem);
     --fonte-tamanho-mobile-descricao-projeto: calc(1vw + .7rem);
