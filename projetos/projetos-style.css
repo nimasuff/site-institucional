@@ -21,18 +21,8 @@
     --fonte-tamanho-desktop-descricao-projeto: calc(.8vw + .2rem);
     --fonte-tamanho-desktop-dados-projeto: calc(.7vw + .2rem);
 }
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-html, body{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow-y: visible;
-}
+
+
 /* FORMATAÇÃO DA SEÇÃO PROJETOS (MOBILE) */
     #secao-projetos{
         display: flex;

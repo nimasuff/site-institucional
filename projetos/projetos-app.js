@@ -1,4 +1,5 @@
-// declarando variaveis dos projetos
+// declarando a array com todos os projetos em andamento e finalizados pelo NIMAS até hoje. 
+// A propriedade 'status' é fundamental para o funcionamento do filtro.
 const projetosNimas = [
     {
         id: 1,
@@ -160,16 +161,42 @@ const projetosNimas = [
         financiador: '',
         status: '',
     },
-]
+];
+
 // selecionando conteiner com todos os projetos
 const projetosNimasSection = document.getElementById('projetos-nimas');
-// dispara quando a página carrega
+
+// seleciionando os botões de filtragem dos projetos --> o médodo querySelectAll gera uma array com todos os botões dessa class '.botao-filtro'
+const btnFiltro = document.querySelectorAll('.botao-filtro');
+
+// agora vamos ouvir o click de cada botao INDIVIDUALMENTE e fazer com que aparecam apenas os projetos que possuem o status igual ao botão clicado. Para os casos em que o botão "Todos" for selecionado, também será criada uma condição. 
+btnFiltro.forEach(function(botao){
+    botao.addEventListener('click',function(e){
+        const statusBtn = e.currentTarget.dataset.status; // retorna o status 'data-status=' do botão clicado
+        // pega os items da array 'projetosNimas' e retorna apenas aqueles que batem com o status de 'statusBtn'
+        const statusProjetos = projetosNimas.filter(function(projetosNimasItens){  
+            if(projetosNimasItens.status === statusBtn){
+                return projetosNimasItens;
+            }
+        });
+        // nenhum projeto tem o status: 'todos', logo temos que criar esse cenário
+        if(statusBtn === "Todos"){
+            displayProjetosNimas(projetosNimas);
+        } else {
+            displayProjetosNimas(statusProjetos);
+        }
+    });
+});
+
+// dispara a função 'displayProjetosNimas' quando a página carrega
 window.addEventListener('DOMContentLoaded',function(){
     displayProjetosNimas(projetosNimas);
 });
 
+// essa função faz com que os projetos apareçam dentro da seção 'projetos-nimas'
 function displayProjetosNimas(projetosNIMAS){
-    let displayProjeto = projetosNIMAS.map(function(item){
+    let displayProjeto = projetosNIMAS.map(function(item){ 
+// o metodo 'map' retorna uma array e coloca uma vircula entre um código e outro.
         return `<article class="projeto finalizado">
                 <!-- imagem do projeto -->
                 <img src="${item.imagem}" alt="imagem projeto: ${item.nome}" class="imagem-projeto">
@@ -198,6 +225,7 @@ function displayProjetosNimas(projetosNIMAS){
                 </div>
             </article>`
     })
+// o médodo 'join' basicamente remove essa virgula entre um item e outro da array, deixando ela aparecer no HTML
     displayProjeto = displayProjeto.join("");
     projetosNimasSection.innerHTML = displayProjeto;
-}
+};

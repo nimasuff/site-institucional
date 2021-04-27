@@ -22,20 +22,6 @@
     --cor: #F2D543;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: content-box;
-    overflow-x: hidden;
-    font-family: var(--fonte-principal);
-    font-size: 100%;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 /* SEÇÃO MEMBROS */
 #membros {
     display: flex;

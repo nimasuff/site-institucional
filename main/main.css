@@ -45,9 +45,9 @@ body{
     background-color: var(--cor-branco);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    min-height: 100vh; 
+    margin: 0;
 }
-
 
 /* FORMATAÇÃO DO MENU DE NAVEGAÇÃO (MOBILE)*/
     #menu #menu-navegacao{
@@ -515,12 +515,12 @@ body{
 footer{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     color: var(--cor-roxo);
     font-weight: 900;
     height: auto;
     background-color: var(--cor-rosa);
+    margin-top: auto; /* faz o footer colar no final da página */
 }
     footer p{
         margin: .5rem 0;
