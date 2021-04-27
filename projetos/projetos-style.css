@@ -17,7 +17,7 @@
     --fonte-tamanho-mobile-descricao-projeto: calc(1vw + .7rem);
     --fonte-tamanho-mobile-dados: calc(1vw + .6rem);
 
-    --fonte-tamanho-desktop-nome-projeto: calc(.9vw + .2rem);
+    --fonte-tamanho-desktop-nome-projeto: calc(.9vw + .3rem);
     --fonte-tamanho-desktop-descricao-projeto: calc(.8vw + .2rem);
     --fonte-tamanho-desktop-dados-projeto: calc(.7vw + .2rem);
 }
@@ -90,10 +90,10 @@ html, body{
                 margin-bottom: 1.5rem;
             }
             .finalizado{
-                border: solid var(--cor-verder) 2px;
+                border: solid var(--cor-roxo) 2px;
             }
             .em-andamento{
-                border: solid var(--cor) 2px;
+                border: solid var(--cor-rosa) 2px;
             }
                 .imagem-projeto{
                     width: 80%;
@@ -116,8 +116,9 @@ html, body{
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        font-size: var(--fonte-tamanho-mobile-nome-projeto);
 
+                        font-size: var(--fonte-tamanho-mobile-nome-projeto);
+                        text-transform: uppercase;
                         padding: 0;
                         width: 98%;
                     }
@@ -192,6 +193,7 @@ html, body{
             }
         #projetos-nimas .projeto{
             width: 48%;
+            height: 100%;
             flex: none;
         }
             .imagem-projeto{

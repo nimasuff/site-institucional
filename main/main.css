@@ -519,9 +519,12 @@ footer{
     align-items: center;
     color: var(--cor-roxo);
     font-weight: 900;
-    height: 10vh;
+    height: auto;
     background-color: var(--cor-rosa);
 }
+    footer p{
+        margin: .5rem 0;
+    }
     footer .linha1{
         display: flex;
         flex-direction: row;
@@ -530,6 +533,7 @@ footer{
         font-size: var(--fonte-tamanho-mobile-pequeno);
         color: var(--cor-roxo);
         width: 50%;
+        margin: 0 0 .5rem 0;
     }
         .linha1 a{
             color: var(--cor-roxo);
@@ -541,6 +545,10 @@ footer{
     footer .sublinhado{
         width: 30%;
         background-color: var(--cor-cinza);
+        margin: .5rem 0;
+    }
+    footer .linha2{
+        margin: 0 0 .5rem 0;
     }
         .linha2 a{
             font-size: .8rem;
@@ -758,16 +766,16 @@ footer{
 /*_______________________________*/
 /* FOOTER DESKTOP */
 footer{
-    height: 14vh;
+    height: auto;
 }
     footer .linha1{
-        width: 30%;
+        width: 15%;
     }
     .linha2 a{
         font-size: .8rem;
     }
     footer .sublinhado{
-        width: 15%;
+        width: 5%;
     }
 }
 
