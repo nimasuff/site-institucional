@@ -132,18 +132,18 @@ const btnFiltro = document.querySelectorAll('.botao-filtro');
 // agora vamos ouvir o click de cada botao INDIVIDUALMENTE e fazer com que aparecam apenas os projetos que possuem o status igual ao botão clicado. Para os casos em que o botão "Todos" for selecionado, também será criada uma condição. 
 btnFiltro.forEach(function(botao){
     botao.addEventListener('click',function(e){
-        const statusBtn = e.currentTarget.dataset.status; // retorna o status 'data-status=' do botão clicado
+        const statusBtnClicado = e.currentTarget.dataset.status; // retorna o status 'data-status=' do botão clicado
         // pega os items da array 'projetosNimas' e retorna apenas aqueles que batem com o status de 'statusBtn'
-        const statusProjetos = projetosNimas.filter(function(projetosNimasItens){  
-            if(projetosNimasItens.status === statusBtn){
+        const filtroStatusProjetos = projetosNimas.filter(function(projetosNimasItens){  
+            if(projetosNimasItens.status === statusBtnClicado){
                 return projetosNimasItens;
             }
         });
         // nenhum projeto tem o status: 'todos', logo temos que criar esse cenário
-        if(statusBtn === "Todos"){
+        if(statusBtnClicado === "Todos"){
             displayProjetosNimas(projetosNimas);
         } else {
-            displayProjetosNimas(statusProjetos);
+            displayProjetosNimas(filtroStatusProjetos);
         }
     });
 });
@@ -184,7 +184,7 @@ function displayProjetosNimas(projetosNIMAS){
                     </div>
                 </div>
             </article>`
-    })
+    });
 // o médodo 'join' basicamente remove essa virgula entre um item e outro da array, deixando ela aparecer no HTML
     displayProjeto = displayProjeto.join("");
     projetosNimasSection.innerHTML = displayProjeto;
