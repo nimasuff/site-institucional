@@ -1,16 +1,20 @@
 // faz o menu lateral aparecer e desaparacer, em telas menores
+// selecionando o menu
 const barraMenu = document.getElementById('barra-menu');
+// abre o menu ao click no icone
 barraMenu.addEventListener('change',showHideMenu);
-window.addEventListener('mouseout',hideMenu)
-function hideMenu(){
-    const divMenuMobile = document.getElementById('menu-barras-mobile');
-    const divLinks = document.getElementById('menu-links');
-    const barras = document.getElementById('barras');
-        divMenuMobile.style.right = '3%';
-        divLinks.style.right = '-100%';
-        barras.style.transform = "rotate(0deg)";
-        barras.style.color = '#000';
-}
+//esconde o menu ao click em qualquer lugar da página
+ window.addEventListener('mouseout',hideMenu);
+ function hideMenu(){
+     const divMenuMobile = document.getElementById('menu-barras-mobile');
+     const divLinks = document.getElementById('menu-links');
+     const barras = document.getElementById('barras');
+         divMenuMobile.style.right = '3%';
+         divLinks.style.right = '-100%';
+         barras.style.transform = "rotate(0deg)";
+         barras.style.color = '#000';
+ }
+// faz o menu aparecer e desaparecer pelo click nas barras
 function showHideMenu(){
     const divMenuMobile = document.getElementById('menu-barras-mobile');
     const divLinks = document.getElementById('menu-links');

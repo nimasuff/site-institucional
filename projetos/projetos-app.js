@@ -118,7 +118,7 @@ const projetosNimas = [
         imagem: 'img-projetos/original/projeto15-nature.svg',
         nome: 'Desmatamento e impactos sobre o comércio internacional',
         desc: 'A partir da análise da crise internacional desencadeada pelas queimadas na Amazônia e seu impacto sobre o comércio exterior brasileiro, busca-se entender as conexões entre desmatamento e comércio internacional.',
-        financiador: '',
+        financiador: '-',
         status: 'Em Andamento',
     }
 ];
