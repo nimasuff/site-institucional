@@ -49,8 +49,6 @@ body{
     min-height: 100vh; 
     margin: 0;
 }
-<<<<<<< Updated upstream
-=======
 /* FORMATAÇÃO DO PRELOADER */
 .loader{
     position: fixed;
@@ -91,7 +89,6 @@ body{
             height: 8rem;
         }
     }
->>>>>>> Stashed changes
 
 /* FORMATAÇÃO DO MENU DE NAVEGAÇÃO (MOBILE)*/
     #menu #menu-navegacao{

@@ -1,12 +1,9 @@
-<<<<<<< Updated upstream
-=======
 // faz a página de precarregamento aparecer e desaparacer
 const preloader = document.querySelector('.loader');
 window.addEventListener('load',function(){
     preloader.classList.add('esconde-tela-loader');
 });
 
->>>>>>> Stashed changes
 // faz o menu lateral aparecer e desaparacer, em telas menores
 // selecionando o menu
 const barraMenu = document.getElementById('barra-menu');
