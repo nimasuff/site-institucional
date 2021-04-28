@@ -49,6 +49,49 @@ body{
     min-height: 100vh; 
     margin: 0;
 }
+<<<<<<< Updated upstream
+=======
+/* FORMATAÇÃO DO PRELOADER */
+.loader{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--cor-roxo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 2000;
+}
+.esconde-tela-loader{
+    visibility: hidden;
+    z-index: -2000;
+}
+    .loader .barra{
+        width: 1.5rem;
+        height: 6rem;
+        margin-left: 10px;
+        animation: loader 1000ms infinite;
+    }
+    .loader .barra:nth-child(1){
+        background-color: var(--cor-rosa);
+        animation-delay: 0;
+    }
+    .loader .barra:nth-child(2){
+        background-color: rgba(255,101,132,.75);
+        animation-delay: 200ms;
+    }
+    .loader .barra:nth-child(3){
+        background-color: rgba(255,101,132,.5);
+        animation-delay: 400ms;
+    }
+
+    @keyframes loader{
+        50%{
+            height: 8rem;
+        }
+    }
+>>>>>>> Stashed changes
 
 /* FORMATAÇÃO DO MENU DE NAVEGAÇÃO (MOBILE)*/
     #menu #menu-navegacao{
