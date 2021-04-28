@@ -462,6 +462,7 @@ body{
             background-color: var(--cor-cinza);
             border: none;
             border-bottom: solid var(--cor-rosa) 2px;
+            resize: none;
             transition: 
                 background-color 300ms ease-in,
                 color 300ms ease-in;

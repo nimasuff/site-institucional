@@ -62,48 +62,66 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    min-height: 150vh;
+    min-height: auto;
 }
     #expo-artigos{
         width: 90%;
         border-left: 2px var(--cor-cinza) solid;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
     }
         .lista-artigios{
             width: 100%;
-            margin-right: 10px;
-            margin-top: 10px;
+            margin: 5% 0;
+            margin-right: 2%;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
             .chamada-artigo{
                 width: 95%;
-                min-height: 25vh;
+                min-height: 20vh;
                 display: flex;
-                padding: 4% 0 2% 0;
-                padding-left: 2%;
+                padding: 2%;
             }
                 .chamada-artigo .container-imagem-artigo{
+                    margin: 0;
+                    padding: 0;
                     width: 70%;
-                    height: 85%;
-                    background-color: var(--cor-preto);
-                    border-radius: .3rem;
-                    transition: height 300ms ease-in;
+                    height: min-content;
+                    display: flex;
+                    flex-direction: column;
+                    transition: 
+                        transform 300ms ease-in;
                 }
-                .chamada-artigo .container-imagem-artigo:hover{
-                    height: 100%;
-                }
-                    .container-imagem-artigo img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        opacity: .7;
+                    .chamada-artigo:hover .container-imagem-artigo{
+                        transform: scale(1.03);
                     }
+                        .container-imagem-artigo img{
+                            width: 100%;
+                            height: 80%;
+                            border-radius: .3rem;
+                        }
+                        .dados-art{
+                            height: 20%;
+                            width: 100%;
+                            margin-top: 5%;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                            .data-publicacao,
+                            .autor-art{
+                                color: var(--cor-roxo);
+                                font-size: var(--fonte-tam-desk-data);
+                                font-style: italic;
+                            }
                 .infos-artigo{
                     width: 100%;
-                    padding: 2% 0 2% 2%;
+                    padding: 0;
+                    margin-left: 1%;
                     display: flex;
                     flex-direction: column;
                 }
@@ -124,17 +142,14 @@
                         .resumo-artigo li{
                             font-size: var(--fonte-tam-desk-resumo);
                         }
-                    .infos-artigo .data-publicacao{
-                        margin-top: auto;
-                        font-size: var(--fonte-tam-desk-data);
-                    }
         .barra-lateral{
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 98%;
             height: auto;
-            border-radius: .3rem;
+            margin-bottom: auto;
+            border-radius: .5rem;
             margin-top: 5%;
             background-color: var(--cor-roxo);
         }
@@ -147,12 +162,14 @@
                 .container-art-mais-lidos h3{
                     margin-left: 5%;
                     margin-right: auto;
-                    padding: .5rem 0;
+                    padding: .8rem 0;
                     color: var(--cor-rosa);
                 }
                 .art-mais-lidos{
-                    width: 95%;
-                    margin-top: 4%;
+                    width: 92%;
+                }
+                .art-mais-lidos .sublinhado{
+                    background-color: var(--cor-cinza);
                 }
                     .art-mais-lidos .art-mais{
                         display: flex;
@@ -160,8 +177,9 @@
                         padding: 1rem;
                     }
                         .art-mais .colocacao{
+                            font-size: var(--fonte-tamanho-mobile-pequeno);
                             font-weight: 900;
-                            color: var(--cor-branco)
+                            color: var(--cor-rosa)
                         }
 
 @media (min-width: 700px){
@@ -172,10 +190,13 @@
         width: 45%;
     }
     .chamada-artigo{
-        min-height: 45vh;
+        min-height: 35vh;
     }
     .chamada-artigo .container-imagem-artigo{
         height: 80%;
         width: 40%;
+    }
+    .art-mais .colocacao{
+        font-size: var(--fonte-tamanho-desktop-pequno);
     }
 }
