@@ -1,50 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TÍTULO -->
-    <title>NIMAS | UFF</title>
-    <!-- FAV ICON -->
-    <link rel="shortcut icon" href="img-main/nav-bar/logo nimas sem uff.png" type="image/x-icon">
-    <!-- LINK PARA FOLHAS DE ESTILO -->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- LINK FONTE DO SITE -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- PRELOADER -->
-    <div class="loader">
-        <div class="barra"></div>
-        <div class="barra"></div>
-        <div class="barra"></div>
-    </div>
-    <!-- MENU DE NAVEGAÇÃO -->
-    <header id="menu">
-        <nav id="menu-navegacao">
-            <div id="menu-logo">
-                <img src="img-main/nav-bar/logo nimas sem uff.png" alt="Logo do NIMAS" id="logo-nimas">
-                <div class="linha-vertical"></div>
-                <img src="img-main/nav-bar/logo uff.png" alt="Logo da Universidade Federal Fluminense (UFF)" id="logo-uff">
-            </div>
-            
-            <div id="menu-links" style="right: -100%;">
-                <div class="link-menu"><a href="#discovery" class="over-sublinha">Início</a></div>
-                <div class="link-menu"><a href="#sobre" class="over-sublinha">Sobre</a></div>
-                <div class="link-menu"><a href="../projetos/projetos.html" class="over-sublinha">Projetos</a></div>
-                <div class="link-menu"><a href="../membros/membros.html" class="over-sublinha">Membros</a></div>
-                <div class="link-menu"><a href="#contato" class="over-sublinha">Contato</a></div>
-            </div>
-
-            <div id="menu-barras-mobile" style="right: 3%;">
-                <label for="barra-menu"><i class="fa fa-bars" id="barras" style="transform: rotate(0deg);color: #000;"></i></label>
-                <input type="checkbox" name="barra-menu" id="barra-menu">
-            </div>
-        </nav>
-    </header>
+<?php
+    include_once 'C:\xampp\htdocs\site-institucional\nav-bar.php';
+?>
     <!-- CALL TO ACTION SECTION -->
     <section id="discovery">
         <div id="titulo-si">
@@ -58,7 +14,7 @@
         </div>
 
         <div class="image-explan">
-            <img src="img-main/call-to-action/tec-logic.svg" alt="Animação de personagem lógica e tec">
+            <img src="assets/img-main/discovery/tec-logic.svg" alt="Animação de personagem lógica e tec">
         </div>
 
         <aside id="redes-sociais">
@@ -90,7 +46,7 @@
             </div>
 
             <div class="image-sobre">
-                <img src="img-main/sobre/ouvindo.svg" alt="lampada feita de água" id="procurando">
+                <img src="assets/img-main/sobre/ouvindo.svg" alt="lampada feita de água" id="procurando">
             </div>
         </div>
 
@@ -110,7 +66,7 @@
     <!-- SECTION NEWSLETTER -->
     <section id="newsletter">
         <div class="newsletter-imagem">
-            <img src="img-main/newsletter/envelop.svg" alt="animação de chamada para newsletter">
+            <img src="assets/img-main/newsletter/envelop.svg" alt="animação de chamada para newsletter">
         </div>
         <form action="#" method="POST" id="e-mail">
             <h2>Newsletter</h2>
@@ -126,28 +82,28 @@
         <div class="sublinhado"></div>
         <div id="logo-parceiros">
             <div class="parceiro">
-                <img src="img-main/parceiros/cired.png" alt="parceiro cired">
+                <img src="assets/img-main/parceiros/cired.png" alt="parceiro cired">
             </div>
             <div class="parceiro">
-                <img src="img-main/parceiros/lima.png" alt="parceiro lima">
+                <img src="assets/img-main/parceiros/lima.png" alt="parceiro lima">
             </div>
             <div class="parceiro">
-                <img src="img-main/parceiros/National_Institute_of_Technology_Trichy_Logo.png" alt="parceiro indiado">
+                <img src="assets/img-main/parceiros/National_Institute_of_Technology_Trichy_Logo.png" alt="parceiro National_Institute_of_Technology_Trichy">
             </div>
             <div class="parceiro">
-                <img src="img-main/parceiros/nemo.png" alt="parceiro nemo">
+                <img src="assets/img-main/parceiros/nemo.png" alt="parceiro nemo">
             </div>
             <div class="parceiro">
-                <img src="img-main/parceiros/logo uff.png" alt="parceiro UFF">
+                <img src="assets/img-main/parceiros/logo uff.png" alt="parceiro UFF">
             </div>
             <div class="parceiro">
-                <img src="img-main/parceiros/ppe.png" alt="parceiro ppe">
+                <img src="assets/img-main/parceiros/ppe.png" alt="parceiro ppe">
             </div>
             <div class="parceiro">
-                <img src="img-main/parceiros/prefeitura rj.png" alt="parceiro prefeitura do RJ">
+                <img src="assets/img-main/parceiros/prefeitura rj.png" alt="parceiro prefeitura do RJ">
             </div>
             <div class="parceiro">
-                <img src="img-main/parceiros/cenbio.png" alt="parceiro cenbio">
+                <img src="assets/img-main/parceiros/cenbio.png" alt="parceiro cenbio">
             </div>
         </div>
     </section>
@@ -157,7 +113,7 @@
             <h2>Contato</h2>
             <div class="sublinhado"></div>
             <div class="image-contato">
-                <img src="img-main/contato/support_active.png" alt="Imagem de chat">
+                <img src="assets/img-main/contato/support_active.png" alt="Imagem de chat">
             </div>
         
             <div class="linha-form">
@@ -209,21 +165,6 @@
             </address>
         </div>
     </section>
-    <!-- SECTION FOOTER -->
-    <footer>
-        <p>Todos os direitos reservados - NIMAS &copy;</p>
-        <div class="linha1">
-            <a href="https://wa.me/5521993002017?text=Olá,%20vim%20pelo%20site%20do%20NIMAS." class="link" target="_blank"><i class="fa fa-whatsapp"></i></a>
-            <a href="mailto:labnimas.esc@id.uff.br?subject=Comentário | SI do NIMAS" target="_blank"><i class="fa fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/company/nimasuff/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/nimasuff" target="_blank"><i class="fa fa-github"></i></a>
-        </div>
-        <div class="sublinhado"></div>
-        <div class="linha2">
-           <a href="https://www.linkedin.com/in/joao-gabriel-martins/" target="_blank" class="over-sublinha"> Developed with <i class="fa fa-heart"></i> By: JG</a>
-        </div>
-    </footer>
-    <!-- LINK PARA SCRIPTS JS -->
-    <script src="config.js"></script>
-</body>
-</html>
+<?php
+    include_once 'C:\xampp\htdocs\site-institucional\footer.php';
+?>

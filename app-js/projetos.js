@@ -3,7 +3,7 @@
 const projetosNimas = [
     {
         id: 1,
-        imagem: 'img-projetos/original/projeto1-energy.svg',
+        imagem: 'assets/img-projetos/projeto1-energy.svg',
         nome: 'Análise do consumo e do potencial de conservação de energia elétrica em comunidades de baixo poder aquisitivo',
         desc: 'Construir indicadores (sociais, econômicos, culturais e tecnológicos) que possibilitem o estabelecimento de um índice que quantifique o potencial de conservação de energia elétrica e meça o consumo da mesma em determinada comunidade, contribuindo para elaboração de medidas e diretrizes para uso racional de energia elétrica, através de ações futuras de gerenciamento tanto pelo lado da oferta quanto da demanda.',
         financiador: 'Faperj',
@@ -11,7 +11,7 @@ const projetosNimas = [
     },
     {
         id: 2,
-        imagem: 'img-projetos/original/projeto2-environment.svg',
+        imagem: 'assets/img-projetos/projeto2-environment.svg',
         nome: 'Evolution of consumption patterns, economic convergence and carbon footprint of development. A comparison Brazil – France',
         desc: 'Comparar a dinâmica de desenvolvimento e mudanças no estilo de vida de um país mais industrializado e urbanizado, como a França, e um país "emergente", o Brasil, com um desenvolvimento industrial mais recente, mas com uma taxa de urbanização que excede a da França.',
         financiador: 'FAPESP e ANR- Agence Nationale de la Recherche',
@@ -19,7 +19,7 @@ const projetosNimas = [
     },
     {
         id: 3,
-        imagem: 'img-projetos/original/projeto3-mobile-wireframe.svg',
+        imagem: 'assets/img-projetos/projeto3-mobile-wireframe.svg',
         nome: 'Padrões de consumo, convergência econômica e pegada de carbono do desenvolvimento: comparação Brasil-França: ECOPA: o enfoque da economia',
         desc: 'Este projeto de pesquisa integrou um projeto mais amplo - o ECOPA. O estudo realizou uma abordagem integrada dos padrões de desenvolvimento e de consumo através das principais necessidades das famílias: habitação, mobilidade, alimentação e lazer, que são responsáveis pela maior parte da pegada ambiental das despesas domésticas.',
         financiador: 'FAPESP',
@@ -27,7 +27,7 @@ const projetosNimas = [
     },
     {
         id: 4,
-        imagem: 'img-projetos/original/projeto4-trown-away.svg',
+        imagem: 'assets/img-projetos/projeto4-trown-away.svg',
         nome: 'Diagnóstico de resíduos sólidos da cidade do Rio de Janeiro, incluindo estudo complementar ao inventário de emissões de gases do efeito estufa',
         desc: 'A Prefeitura da Cidade do Rio de Janeiro teve como objetivo atualizar o inventário de emissões de GEE para o ano de 2012, verificando as reduções efetivamente alcançadas, e atualizar seu Plano de Ação Municipal para a mitigação dessas emissões. A parte que compete à equipe da UFF refere-se especificamente à geração e destinação de resíduos em favelas.',
         financiador: 'SMAC/RJ',
@@ -35,7 +35,7 @@ const projetosNimas = [
     },
     {
         id: 5,
-        imagem: 'img-projetos/original/projeto5-scooter.svg',
+        imagem: 'assets/img-projetos/projeto5-scooter.svg',
         nome: 'Balanço Energético do Estado do Rio de Janeiro (BEERJ) 2017, ano base 2016 e Matriz energética do Estado do Rio de Janeiro 2017-2031<br>&<br>Balanço Energético do Estado do Rio de Janeiro (BEERJ) 2015, ano-base 2014 e Matriz Energética do Estado do Rio de Janeiro 2015-2030',
         desc: 'Construção do Balanço Energético estadual e de cenários macroeconômicos para Matriz Energética do Rio de Janeiro.',
         financiador: 'Secretaria de Energia do Estado do Rio de Janeiro',
@@ -43,7 +43,7 @@ const projetosNimas = [
     },
     {
         id: 6,
-        imagem: 'img-projetos/original/projeto6-creative-experiment.svg',
+        imagem: 'assets/img-projetos/projeto6-creative-experiment.svg',
         nome: 'A economia criativa e seus impactos sobre a sustentabilidade: A contribuição das startups ao meio ambiente no Rio de Janeiro - PIBIC VOLUNTÁRIO',
         desc: 'O estudo observa o número de startups incubadas em incubadoras de empresas ligadas à Economia Criativa e meio ambiente e mapeia os empreendimentos por área de atuação da Economia Criativa que criam/trabalham ou que podem vir a criar/trabalhar com produtos e/ou serviços que afetam de alguma forma o meio ambiente e que estão incubados ou que já foram graduados por estas incubadoras no RJ nos últimos anos e compara-os às cidades de São Paulo e Florianópolis.',
         financiador: 'UFF',
@@ -51,7 +51,7 @@ const projetosNimas = [
     },
     {
         id: 7,
-        imagem: 'img-projetos/original/projeto7-forming-ideas.svg',
+        imagem: 'assets/img-projetos/projeto7-forming-ideas.svg',
         nome: 'A ECONOMIA CRIATIVA E SEUS IMPACTOS SOBRE A SUSTENTABILIDADE: A contribuição das startups ditas do setor de Economia Criativa ao meio ambiente no Rio de Janeiro',
         desc: 'Examinar os impactos sobre a sustentabilidade da economia criativa através de uma análise da contribuição das startups ditas do setor de Economia Criativa ao meio ambiente no Brasil e mais especificamente no Rio de Janeiro.',
         financiador: 'Faperj',
@@ -59,7 +59,7 @@ const projetosNimas = [
     },
     {
         id: 8,
-        imagem: 'img-projetos/original/projeto8-bicycle.svg',
+        imagem: 'assets/img-projetos/projeto8-bicycle.svg',
         nome: 'PDPA GENER-NIMAS: Mobilidade sustentável',
         desc: 'Projeto com a Prefeitura de Niterói para elaboração de uma plataforma para tomadores de decisão sobre mobilidade sustentável',
         financiador: 'Prefeitura de Niterói',
@@ -67,7 +67,7 @@ const projetosNimas = [
     },
     {
         id: 9,
-        imagem: 'img-projetos/original/projeto9-eletric-car.svg',
+        imagem: 'assets/img-projetos/projeto9-eletric-car.svg',
         nome: 'PDPA NIMAS-GENER: Análise da vulnerabilidade Energética em Comunidades de Niterói e aprimoramento de políticas públicas municipais em atendimento à população',
         desc: 'Projeto com a Prefeitura de Niterói para identificar e analisar vulnerabilidades energéticas em comunidades carentes de Niterói para propor o desenvolvimento e/ou o aprimoramento de políticas públicas de redução destas vulnerabilidades.',
         financiador: 'Prefeitura de Niterói',
@@ -75,7 +75,7 @@ const projetosNimas = [
     },
     {
         id: 10,
-        imagem: 'img-projetos/original/projeto10-chef.svg',
+        imagem: 'assets/img-projetos/projeto10-chef.svg',
         nome: 'Avaliação de Viabilidade Econômica de Uso de Resíduos de Casca de Coco para Aproveitamento Energético : PIBITI/PIBINOVA',
         desc: '',
         financiador: 'CNPq/UFF',
@@ -83,7 +83,7 @@ const projetosNimas = [
     },
     {
         id: 11,
-        imagem: 'img-projetos/original/projeto11-alien-science.svg',
+        imagem: 'assets/img-projetos/projeto11-alien-science.svg',
         nome: 'BRICS: Aproveitamento energético de resíduos por pirólise',
         desc: '',
         financiador: 'CNPq',
@@ -91,7 +91,7 @@ const projetosNimas = [
     },
     {
         id: 12,
-        imagem: 'img-projetos/original/projeto12-upgrade.svg',
+        imagem: 'assets/img-projetos/projeto12-upgrade.svg',
         nome: 'O grau de sobrevivência de startups de Economia Criativa, e seus impactos sobre a sustentabilidade no Rio de Janeiro',
         desc: 'O projeto possui dois grandes objetivos: primeiro, o de examinar os impactos relacionados à sustentabilidade das startups de economia criativa no meio ambiente, através de uma análise de sua contribuição na redução de impactos negativos no mesmo e mais especificamente no Rio de Janeiro; <br> E segundo, o de testar a hipótese de que startups que buscam gerar menos impacto no meio ambiente têm probabilidade de sobrevivência maior.',
         financiador: 'FAPERJ',
@@ -99,7 +99,7 @@ const projetosNimas = [
     },
     {
         id: 13,
-        imagem: 'img-projetos/original/projeto13-app-wireframe.svg',
+        imagem: 'assets/img-projetos/projeto13-app-wireframe.svg',
         nome: 'AOMU - Aplicativo otimizador de mobilidade urbana',
         desc: 'Proposta de um aplicativo que visa melhorar a mobilidade urbana das pessoas, reduzindo os congestionamentos provocados pela presença de taxis circulando vazios sem necessidade, um transporte público mais previsível e, portanto, mais procurado, reduzindo o número de carros individuais e, no final das contas, gerando menos atrasos dos indivíduos, aumentando a produtividade do trabalho.',
         financiador: 'UFF e FAPERJ',
@@ -107,7 +107,7 @@ const projetosNimas = [
     },
     {
         id: 14,
-        imagem: 'img-projetos/original/projeto14-growing.svg',
+        imagem: 'assets/img-projetos/projeto14-growing.svg',
         nome: 'Transição energética global e desenvolvimento sustentável',
         desc: 'Estudo descritivo sobre a atual conjuntura mundial e brasileira referente às políticas e tecnologias voltadas para efetivação da transição energética que inibe o uso de combustíveis fósseis e estimula a geração e consumo de energia por fontes renováveis alternativas.',
         financiador: 'Claude Cohen',
@@ -115,7 +115,7 @@ const projetosNimas = [
     },
     {
         id: 15,
-        imagem: 'img-projetos/original/projeto15-nature.svg',
+        imagem: 'assets/img-projetos/projeto15-nature.svg',
         nome: 'Desmatamento e impactos sobre o comércio internacional',
         desc: 'A partir da análise da crise internacional desencadeada pelas queimadas na Amazônia e seu impacto sobre o comércio exterior brasileiro, busca-se entender as conexões entre desmatamento e comércio internacional.',
         financiador: '-',

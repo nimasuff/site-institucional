@@ -1,57 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TITLE DA PÁGINA -->
-    <title>NIMAS | MEMBROS</title>
-    <!-- FAV ICON -->
-    <link rel="shortcut icon" href="../main/img-main/nav-bar/logo nimas sem uff.png" type="image/x-icon">
-    <!-- LINK PARA FOLHAS DE ESTILO -->
-    <link rel="stylesheet" href="../main/main.css">
-    <link rel="stylesheet" href="membros.css">
-    <!-- LINK PARA FONT WASOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- LINK FONTES DO SITE -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- PRELOADER -->
-    <div class="loader">
-        <div class="barra"></div>
-        <div class="barra"></div>
-        <div class="barra"></div>
-    </div>
-    <!-- MUNU -->
-    <header id="menu">
-        <nav id="menu-navegacao">
-            <div id="menu-logo">
-                <img src="../main/img-main/nav-bar/logo nimas sem uff.png" alt="Logo do NIMAS" id="logo-nimas">
-                <div class="linha-vertical"></div>
-                <img src="../main/img-main/nav-bar/logo uff.png" alt="Logo da Universidade Federal Fluminense (UFF)" id="logo-uff">
-            </div>
-            
-            <div id="menu-links" style="right: -100%;">
-                <div class="link-menu"><a href="../main/index.html" class="over-sublinha">Início</a></div>
-                <div class="link-menu"><a href="../main/index.html#sobre" class="over-sublinha">Sobre</a></div>
-                <div class="link-menu"><a href="../projetos/projetos.html" class="over-sublinha">Projetos</a></div>
-                <div class="link-menu"><a href="membros.html" class="over-sublinha">Membros</a></div>
-                <div class="link-menu"><a href="../main/index.html#contato" class="over-sublinha">Contato</a></div>
-            </div>
-
-            <div id="menu-barras-mobile" style="right: 3%;">
-                <label for="barra-menu"><i class="fa fa-bars" id="barras" style="transform: rotate(0deg);color: #000;"></i></label>
-                <input type="checkbox" name="barra-menu" id="barra-menu">
-            </div>
-        </nav>
-    </header>
+<?php
+    include_once 'nav-bar.php';
+?>
 
     <article id="membros">
         <header id="membros-intro">
             <div class="image-header">
-                <img src="img-membros/membros-page/team-work.svg" alt="desenho de duas pessoas sentadas">
+                <img src="assets/img-membros/membros-page/team-work.svg" alt="desenho de duas pessoas sentadas">
             </div>
 
             <div class="conteudo-header">
@@ -72,7 +26,7 @@
         <main id="membros-conteudo">
             <aside>
                 <div class="image-header">
-                    <img src="img-membros/membros-page/team-page.svg" alt="desenho de time">
+                    <img src="assets/img-membros/membros-page/team-page.svg" alt="desenho de time">
                 </div>
             </aside>
 
@@ -81,15 +35,15 @@
                     <h3 class="link">Coordenadora <br> NIMAS</h3>
                     <div id="coordenadores" class="seletor-membro">
                         <div class="foto-perfil">
-                            <img src="#" alt="foto de perfil da Claude Cohen" id="foto-perfil-coordenadora">
+                            <img src="" alt="foto de perfil coordenadora da extensao" id="foto-perfil-coordenadora">
                         </div>
                         <div class="descricao">
                             <div class="nome-membro" id="nome-coordenadora">
                                 Claude Cohen
                             </div>
                             <div class="redes-sociais">
-                                <a href="#" target="_blank" id="linkedin-coordenadora"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" target="_blank" id="lattes-coordenadora">Lattes</a>
+                                <a href="" target="_blank" id="linkedin-coordenadora"><i class="fa fa-linkedin"></i></a>
+                                <a href="" target="_blank" id="lattes-coordenadora">Lattes</a>
                             </div>
                         </div>
                     </div>
@@ -110,8 +64,8 @@
 
                             </div>
                             <div class="redes-sociais">
-                                <a href="#" target="_blank" id="linkedin-pesq-int"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" target="_blank" id="lattes-pesq-int">Lattes</a>
+                                <a href="" target="_blank" id="linkedin-pesq-int"><i class="fa fa-linkedin"></i></a>
+                                <a href="" target="_blank" id="lattes-pesq-int">Lattes</a>
                             </div>
                         </div>
                     </div>
@@ -132,8 +86,8 @@
 
                             </div>
                             <div class="redes-sociais">
-                                <a href="#" target="_blank" id="linkedin-pesq-ext"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" target="_blank" id="lattes-pesq-ext">Lattes</a>
+                                <a href="" target="_blank" id="linkedin-pesq-ext"><i class="fa fa-linkedin"></i></a>
+                                <a href="" target="_blank" id="lattes-pesq-ext">Lattes</a>
                             </div>
                         </div>
                     </div>
@@ -154,8 +108,8 @@
 
                             </div>
                             <div class="redes-sociais">
-                                <a href="#" target="_blank" id="linkedin-bach-econ"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" target="_blank" id="lattes-bach-econ">Lattes</a>
+                                <a href="" target="_blank" id="linkedin-bach-econ"><i class="fa fa-linkedin"></i></a>
+                                <a href="" target="_blank" id="lattes-bach-econ">Lattes</a>
                             </div>
                         </div>
                     </div>
@@ -176,8 +130,8 @@
 
                             </div>
                             <div class="redes-sociais">
-                                <a href="#" target="_blank" id="linkedin-bach-amb"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" target="_blank" id="lattes-bach-amb">Lattes</a>
+                                <a href="" target="_blank" id="linkedin-bach-amb"><i class="fa fa-linkedin"></i></a>
+                                <a href="" target="_blank" id="lattes-bach-amb">Lattes</a>
                             </div>
                         </div>
                     </div>
@@ -190,20 +144,6 @@
             </section>
         </main>
     </article>
-    <footer>
-        <p>NIMAS &copy;</p>
-        <div class="linha1">
-            <a href="https://wa.me/5521993002017?text=Olá,%20vim%20pelo%20site%20do%20NIMAS." class="link" target="_blank"><i class="fa fa-whatsapp"></i></a>
-            <a href="mailto:labnimas.esc@id.uff.br?subject=Comentário | SI do NIMAS" target="_blank"><i class="fa fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/company/nimasuff/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/nimasuff" target="_blank"><i class="fa fa-github"></i></a>
-        </div>
-        <div class="sublinhado"></div>
-        <div class="linha2">
-           <a href="https://www.linkedin.com/in/joao-gabriel-martins/" target="_blank" class="over-sublinha"> Developed with <i class="fa fa-heart"></i> By: JG</a>
-        </div>
-    </footer>
-<script src="membros.js"></script>
-<script src="../main/config.js"></script>
-</body>
-</html>
+<?php 
+    include_once 'footer.php';
+?>

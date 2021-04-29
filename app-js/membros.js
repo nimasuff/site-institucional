@@ -3,14 +3,14 @@ const membros_coordenador = [
     {
         id: 1,
         nome: 'Claude Cohen',
-        img_perfil: 'img-membros/membros/claude-cohen.jpg',
+        img_perfil: 'assets/img-membros/membros/claude-cohen.jpg',
         linkedin: 'https://www.linkedin.com/in/claude-cohen-427b97146/',
         lattes: ''
     },
     {
         id: 2,
         nome: 'João Gabriel Martins',
-        img_perfil: 'img-membros/membros/jg.jpg',
+        img_perfil: 'assets/img-membros/membros/jg.jpg',
         linkedin: 'https://www.linkedin.com/in/joao-gabriel-martins/',
         lattes: 'http://lattes.cnpq.br/8542656790521330',
     }
@@ -110,7 +110,7 @@ const bach_economia = [
     {
         id: 1,
         nome: 'João Gabriel Martins',
-        img_perfil: 'img-membros/membros/jg.jpg',
+        img_perfil: 'assets/img-membros/membros/jg.jpg',
         linkedin: 'https://www.linkedin.com/in/joao-gabriel-martins/',
         lattes: 'http://lattes.cnpq.br/8542656790521330',
     },
