@@ -16,14 +16,6 @@
         <div class="image-explan">
             <img src="assets/img-main/discovery/tec-logic.svg" alt="Animação de personagem lógica e tec">
         </div>
-
-        <aside id="redes-sociais">
-            <div class="icones-rede">
-                <a href="https://github.com/nimasuff" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/company/nimasuff/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="mailto:labnimas.esc@id.uff.br?subject=Comentário | SI do NIMAS"><i class="fa fa-envelope"></i></a>
-            </div>
-        </aside>
     </section>
     <!-- SECTION SOBRE -->
     <section id="sobre">
