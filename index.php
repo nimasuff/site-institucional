@@ -109,7 +109,7 @@
     </section>
     <!-- SECTION CONTATO -->
     <section id="contato">
-        <form action="#" method="POST" id="form-contato">
+        <form action="includes/comments-inc.php" method="POST" id="form-contato">
             <h2>Contato</h2>
             <div class="sublinhado"></div>
             <div class="image-contato">
@@ -118,7 +118,7 @@
         
             <div class="linha-form">
                 <label for="c-nome">Nome</label>
-                <input type="text" name="c-nome" id="c-nome" class="formatacao-input" placeholder="seu nome" maxlength="30">
+                <input type="text" name="c-nome" id="c-nome" class="formatacao-input" placeholder="nome..." maxlength="30">
             </div>
             <!-- <div class="linha-form">
                 <label for="c-sobrenome">Sobrenome</label>
@@ -126,14 +126,14 @@
             </div> -->
             <div class="linha-form">
                 <label for="c-email">E-mail</label>
-                <input type="email" name="c-email" id="c-email" class="formatacao-input" placeholder="seu e-mail" maxlength="40">
+                <input type="email" name="c-email" id="c-email" class="formatacao-input" placeholder="e-mail..." maxlength="40">
             </div>
             <div class="comentario-form">
                 <label for="comentario">Comentário</label>
-                <textarea name="comentario" id="comentario" cols="15" rows="5" placeholder="seu comentário deve ter até 144 caracteres" maxlength="144"></textarea>
+                <textarea name="comentario" id="comentario" cols="15" rows="5" placeholder="comentário..." maxlength="244"></textarea>
             </div>
 
-            <input type="submit" value="Enviar">
+            <input type="submit" name="enviar" value="Enviar">
         </form>
         <div class="mapa-info-contato">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d818.6054893208791!2d-43.13297010574935!3d-22.898074527982097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9983d47745f783%3A0x2321fc9b4e48f3a5!2sUFF%20-%20Faculdade%20de%20Economia!5e0!3m2!1spt-BR!2sbr!4v1618105183507!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

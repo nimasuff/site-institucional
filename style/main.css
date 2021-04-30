@@ -439,12 +439,19 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            height: 12vh;
-            
         }
             label{
+                padding: .5rem 0;
                 color: var(--cor-branco);
                 font-size: var(--fonte-tamanho-mobile-pequeno);
+                position: relative;
+            }
+            label::after{
+                content: ' *';
+                color: var(--cor-rosa);
+                font-size: 1rem;
+                position: absolute;
+                top: .3rem;
             }
             .linha-form input{
                 width: 100%;
@@ -455,7 +462,6 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            
         }
             textarea{
             padding: .5rem 1rem;
@@ -501,10 +507,11 @@ body{
             align-items: center;
             height: 36vh;
 
-            width: 90%;
+            width: 100%;
             margin: .5rem auto;
             text-align: center;
             font-style: normal;
+            object-fit: cover;
         }
             address > .dado-contato{
                 width: 99%;
@@ -702,8 +709,7 @@ footer{
         height: 30%;
         width: 40rem;
         margin-right: .4rem;
-        position: relative;
-        
+        position: fixed;
     }
         .icones-rede{
             display: flex;
