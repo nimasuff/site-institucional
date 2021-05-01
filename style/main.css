@@ -202,13 +202,18 @@ body{
             height: 100%;
         }
     #discovery #titulo-si{
-        margin: 5% 5%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-top: 5%;
         width: 90%;
+        height: 40vh;
+        position: relative;
     }
         #titulo-si h1{
             font-size: var(--fonte-tamanho-mobile-grande);
         }
-        .sublinhado{
+        #titulo-si .sublinhado{
             height: 1.5px;
             width: 100%;
             background-color: var(--cor-rosa);
@@ -216,30 +221,48 @@ body{
         #titulo-si p{
             font-size: var(--fonte-tamanho-mobile-pequeno);
         }
-        .call-to-action{
-            margin: .5rem 0;
+        .btn-call-to-action{
+            margin: 1rem auto;
+            width: 5em;
+            font-size: var(--fonte-tamanho-mobile-pequeno2);
+            text-align: center;
+
+            color: var(--cor-roxo);
+            text-decoration: none;
+            font-weight: 900;
+            padding: .25em 1em;
+            
+            border-radius: .25em;
+            border: currentColor .2em solid;
+
+            transition: 
+                all 300ms ease;
         }
-            .botao-contato{
-                background-color: transparent;
-                border: 2px var(--cor-roxo) solid;
-                border-radius: .2rem;
-                padding: .4rem 0;
-            }
-                .botao-contato a{
-                    padding: 1rem;
-                    font-weight: 900;
-                    background-color: transparent;
-                    text-decoration: none;
-                    color: var(--cor-roxo);
-                    transition: 
-                        background-color 200ms ease-in,
-                        color 300ms ease-in;
-                }
-                .botao-contato a:hover,
-                .botao-contato a:focus{
-                    background-color: var(--cor-roxo);
-                    color: var(--cor-rosa);
-                }
+        .btn-call-to-action::before{
+            content: '';
+            position: absolute;
+            background-color: var(--cor-roxo);
+            bottom: 3em;
+            right: 50%;
+            margin-right: -60px;
+            width: 120px;
+            height: 40px;
+
+            transform: 
+            perspective(1em) rotateX(40deg) scale(1, 0.35);
+            filter: blur(2em);
+            opacity: .7;
+            pointer-events: none;
+        }
+        .btn-call-to-action:hover,
+        .btn-call-to-action:focus{
+            color: var(--cor-rosa);
+            background-color: var(--cor-roxo);
+            cursor: pointer;
+        }
+        .btn-call-to-action:hover::before{
+            opacity: 1;
+        }
 #redes-sociais{
     display: none;
 }
@@ -693,7 +716,9 @@ footer{
             display: none;
         }
         #discovery #titulo-si{
-            height: auto;
+            height: 50vh;
+            width: auto;
+            pointer-events: unset;
         }
             #titulo-si h1{
                 font-size: var(--fonte-tamanho-desktop-grande);
@@ -702,13 +727,23 @@ footer{
                 font-size: var(--fonte-tamanho-desktop-pequno);
             }
             #titulo-si .sublinhado{
-                width: 25%;
+                width: 100%;
+                height: 2px;
+            }
+            .btn-call-to-action{
+                pointer-events: unset;
+                margin: 1em auto;
+                width: 7rem;
+                font-size: var(--fonte-tamanho-desktop-pequno);
+            }
+            .btn-call-to-action::before{
+                bottom: 15%;
+                pointer-events: none;
             }
     #redes-sociais{
         display: flex;
         justify-content: flex-end;
         height: 10rem;
-        width: 20rem;
         position: fixed;
         right: 1rem;
         top: 10rem;
@@ -717,7 +752,7 @@ footer{
         .icones-rede{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-end;
             justify-content: space-evenly;
         }
             .icones-rede a{
@@ -725,13 +760,17 @@ footer{
             }
                 .icones-rede i{
                     font-size: var(--fonte-tamanho-desktop-grande);
-                    color: var(--cor-roxo);
-                    text-align: center;
-                    
+                    color: var(--cor-roxo); 
                 }
-                    .icones-rede .fa{
-                        font-size: var(--fonte-tamanho-mobile-grande);
-                    }
+                .icones-rede .fa{
+                    font-size: var(--fonte-tamanho-mobile-grande);
+                    position: relative;
+                    padding-left: 0;
+                    transition: padding-left 200ms ease;
+                }
+                .icones-rede .fa:hover{
+                    padding-left: 20rem;
+                }
                     .icones-rede .fa::after{
                         right: -25rem;
                         font-size: 1.8rem;
@@ -740,28 +779,28 @@ footer{
                         background-color: var(--cor-roxo);
                         color: var(--cor-rosa);
                         padding: .4rem .6rem;
-                        border-radius: .4rem;
+                        border-radius: .5rem;
                         position: absolute;
 
                         transition: right 300ms ease-out;
                     }
                     .icones-rede .fa-github::after{
                         content: '@nimasuff';
-                        top: .2rem;
+                        top: .1rem;
                     }
                     .icones-rede .fa-github:hover::after{
                         right: 0rem;
                     }
                     .icones-rede .fa-linkedin::after{
                         content: '@nimasuff';
-                        top: 3.5rem;
+                        top: .1rem;
                     }
                     .icones-rede .fa-linkedin:hover::after{
                         right: 0rem;
                     }
                     .icones-rede .fa-envelope::after{
                         content: 'labnimas.esc@id.uff.br';
-                        top: 6.9rem;
+                        top: .1rem;
                     }
                     .icones-rede .fa-envelope:hover::after{
                         right: 0rem;

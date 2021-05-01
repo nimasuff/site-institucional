@@ -8,9 +8,7 @@
             <div class="sublinhado"></div>
             <p>Núcleo de Inovação <br>Meio Ambiente e Sociedade</p>
 
-            <div class="call-to-action">
-                <button class="botao-contato"><a href="#contato">Saiba Mais</a></button>
-            </div>
+            <a href="index.php#contato" target="_self" class="btn-call-to-action">Saiba Mais</a>
         </div>
 
         <div class="image-explan">
