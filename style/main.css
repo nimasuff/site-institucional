@@ -1,7 +1,7 @@
 
 :root{
     --cor-preto: #000;
-    --cor-verder: rgba(110, 140, 2, 1); /*#6E8C02*/
+    --cor-verde: rgba(110, 140, 2, 1); /*#6E8C02*/
     --cor-rosa: rgba(255,101,132,1);
     --cor-roxo: rgba(47,46,65,1);
     --cor-cinza: rgba(242, 242, 242,1);
@@ -25,7 +25,7 @@
 }
 
 ::selection{
-    background-color: var(--cor-verder);
+    background-color: var(--cor-verde);
     color: var(--cor-branco);
 }
 
@@ -43,11 +43,11 @@ html{
 }
 
 body{
-    background-color: var(--cor-branco);
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
     margin: 0;
+    background-color: var(--cor-cinza);
 }
 /* FORMATAÇÃO DO PRELOADER */
 .loader{
@@ -225,16 +225,16 @@ body{
         }
         .btn-call-to-action{
             margin: 1rem auto;
-            width: 5em;
+            width: 8em;
             font-size: var(--fonte-tamanho-mobile-pequeno2);
             text-align: center;
+            box-sizing: border-box;
 
             color: var(--cor-roxo);
             text-decoration: none;
             font-weight: 900;
             padding: .25em 1em;
             
-            border-radius: .25em;
             border: currentColor .2em solid;
 
             transition: 
@@ -242,6 +242,7 @@ body{
         }
         .btn-call-to-action::before{
             content: '';
+            box-sizing: border-box;
             position: absolute;
             background-color: var(--cor-roxo);
             top: 80%;
@@ -273,7 +274,10 @@ body{
 /* SECTION SOBRE (MOBILE)*/
 #sobre{
     width: 85%;
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;
+    background-color: var(--cor-branco);
+    padding: 1em;
+    box-sizing: border-box;
 }
         h2{
             font-size: var(--fonte-tamanho-mobile-grande2);
@@ -285,6 +289,8 @@ body{
         #sobre .sublinhado{
             width: 70%;
             margin: .5rem auto;
+            height: 2px;
+            background-color: var(--cor-rosa);
         } 
             .principio p{
                 text-align: justify;
@@ -294,11 +300,10 @@ body{
             .principio h3{
                 font-size: var(--fonte-tamanho-mobile-grande3);
                 margin: .5rem 2rem;
-                color: var(--cor-verder);
+                color: var(--cor-verde);
             }
             .principio ol{
-                border-left: 4px solid var(--cor-verder);
-                background-color: var(--cor-cinza);
+                border-left: 8px solid var(--cor-roxo);
                 padding: 1rem 1.5rem;
                 margin: 1rem 0;
                 list-style-type: upper-roman;
@@ -320,87 +325,82 @@ body{
             }
 /*________________________________________________*/
 /*FORMATAÇÃO DA DIV E-MAIL (MOBILE) */
-.newsletter-imagem{
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-}
-    .newsletter-imagem img{
-        width: 100%;
+    .newsletter-imagem{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
     }
-#e-mail{
-    width: 90%;
-    height: 42vh;
-    margin: 1rem auto;
-    border-radius: .3rem;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    background-color: var(--cor-roxo);
-}
-    #e-mail h2{
-        color: var(--cor-branco);
-        letter-spacing: .15rem;
-    }
-    #e-mail .sublinhado{
-        height: 2px;
-        width: 80%;
-        background-color: var(--cor-rosa);
-    }
-    #e-mail p{
-        font-size: var(--fonte-tamanho-mobile-pequeno2);
-        text-align: center;
-        width: 80%;
-        font-weight: 600;
-        color: var(--cor-branco);
-    }
-    .formatacao-input{
-        padding: .5rem 1rem;
-        width: 80%;
-        height: 3vh;
-        background-color: var(--cor-cinza);
+        .newsletter-imagem img{
+            width: 100%;
+        }
+    #e-mail-form{
+        width: 90%;
+        height: 55vh;
+        margin: 1rem auto;
+        border-radius: .3rem;
         border: none;
-        border-bottom: solid var(--cor-rosa) 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
 
-        transition: 
-            background-color 300ms ease-in,
-            color 300ms ease-in;
+        background-color: var(--cor-roxo);
     }
-        .formatacao-input::placeholder{
-            color: var(--cor-preto);
+        #e-mail-form h2{
+            color: var(--cor-branco);
+            letter-spacing: .15rem;
         }
-        .formatacao-input:hover::placeholder,
-        .formatacao-input:focus::placeholder{
-            color: var(--cor-rosa);
+        #e-mail-form .sublinhado{
+            height: 2px;
+            width: 80%;
+            background-color: var(--cor-rosa);
         }
-        .formatacao-input:hover,
-        .formatacao-input:focus{
+        #e-mail-form p{
+            font-size: var(--fonte-tamanho-mobile-pequeno2);
+            text-align: center;
+            width: 80%;
+            font-weight: 600;
+            color: var(--cor-branco);
+        }
+        .formatacao-input{
+            padding: .5em 1em;
+            width: 80%;
+            height: 2.5vh;
+            background-color: var(--cor-cinza);
+            border: none;
+            border-bottom: solid var(--cor-rosa) 3px;
+            color: var(--cor-roxo);
+            font-weight: bolder;
+        }
+            .formatacao-input::placeholder{
+                color: var(--cor-preto);
+                font-weight: normal;
+            }
+            .formatacao-input:hover::placeholder,
+            .formatacao-input:focus::placeholder{
+                color: var(--cor-rosa);
+                font-weight: bolder;
+            }
+        input[type='submit']{
+            width: 20%;
+            padding: .5rem 1rem;
+            border: solid var(--cor-cinza) 2px;
+            border-radius: .3rem;
             color: var(--cor-rosa);
             font-weight: 900;
-        }
-    input[type='submit']{
-        width: 20%;
-        padding: .5rem 1rem;
-        border: solid var(--cor-cinza) 2px;
-        border-radius: .3rem;
-        color: var(--cor-rosa);
-        font-weight: 900;
-        background-color: transparent;
-        cursor: pointer;
+            background-color: transparent;
+            cursor: pointer;
 
-        transition: 
-            all 300ms ease-in;
-    }
-    input[type='submit']:hover,
-    input[type="submit"]:focus{
-        background-color: var(--cor-cinza);
-        text-transform: uppercase;
-        letter-spacing: .05rem;
-        color: var(--cor-verder);
-    }
+            transition: 
+                all 300ms ease-in;
+        }
+        input[type='submit']:hover,
+        input[type="submit"]:focus{
+            background-color: var(--cor-cinza);
+            text-transform: uppercase;
+            letter-spacing: .05rem;
+            color: var(--cor-verde);
+        }
 /* FORMATAÇÃO PARCEIROS (MOBILE)*/
 #parceiros{
     width: 100%;
@@ -409,10 +409,12 @@ body{
     justify-content: space-evenly;
     align-items: center;
 
-    background-color: var(--cor-cinza);
+    background-color: var(--cor-branco);
 }
     #parceiros .sublinhado{
         width: 70%;
+        height: 2px;
+        background-color: var(--cor-rosa);
         margin: 0 auto;
     }
     #logo-parceiros{
@@ -452,6 +454,8 @@ body{
             letter-spacing: .15rem;
         }
         #form-contato .sublinhado{
+            background-color: var(--cor-rosa);
+            height: 2px;
             width: 70%;
         }
         #form-contato .image-contato{
@@ -468,32 +472,40 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+            padding-top: .5em;
         }
             label{
-                padding: .5rem 0;
+                padding: .2em 0;
                 color: var(--cor-branco);
                 font-size: var(--fonte-tamanho-mobile-pequeno);
                 position: relative;
             }
-            label::after{
-                content: ' *';
-                color: var(--cor-rosa);
-                font-size: 1rem;
-                position: absolute;
-                top: .3rem;
+                label::after{
+                    content: '*';
+                    color: var(--cor-rosa);
+                    font-size: 1rem;
+                    position: absolute;
+                    top: .3rem;
+                }
+            .formatacao-input{
+                width: 80%;
             }
-            .linha-form input{
-                width: 100%;
+            .erro{
+                color: var(--cor-branco);
+                margin-left: .5em;
+                margin-top: .1em;
+                font-size: var(--fonte-tamanho-mobile-pequeno2);
             }
         .comentario-form{
             width: 90%;
-            height: 23vh;
+            height: auto;
+            padding-top: .5em;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
         }
             textarea{
-            padding: .5rem 1rem;
+            padding: .5em 1em;
             background-color: var(--cor-cinza);
             border: none;
             border-bottom: solid var(--cor-rosa) 2px;
@@ -547,7 +559,7 @@ body{
                 height: 100%;
                 padding: .3rem 0;
                 margin-bottom: .4rem;
-                background-color: var(--cor-cinza);
+                background-color: var(--cor-branco);
 
                 display: flex;
                 flex-direction: row;
@@ -623,6 +635,7 @@ footer{
         }
     footer .sublinhado{
         width: 30%;
+        height: 2px;
         background-color: var(--cor-cinza);
         margin: .5rem 0;
     }
@@ -738,7 +751,7 @@ footer{
             .btn-call-to-action{
                 pointer-events: unset;
                 margin: 1em auto;
-                width: 7rem;
+                width: 8em;
                 font-size: var(--fonte-tamanho-desktop-pequno);
             }
             .btn-call-to-action::before{
@@ -821,14 +834,17 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 90%;
-    margin: 0 auto;
+    justify-content: space-evenly;
+    width: 100%;
 }
     .newsletter-imagem{
-        width: 40%;
+        height: auto;
+        width: 35%;
+        margin: 0;
     }
-    #e-mail{
-        width: 40%;
+    #e-mail-form{
+        width: 35%;
+        margin: 0;
     }
         #e-mail p{
             font-size: var(--fonte-tamanho-desktop-pequno);
@@ -853,6 +869,9 @@ footer{
     }
         label{
             font-size: var(--fonte-tamanho-desktop-pequno);
+        }
+        .erro{
+            font-size: var(--fonte-tamanho-desktop-menu-hover);
         }
     .mapa-info-contato{
         width: 50%;
