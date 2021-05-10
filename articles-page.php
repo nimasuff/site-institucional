@@ -8,7 +8,7 @@
             <div class="sublinhado"></div>
         </header>
         <video class="container-video" controls muted autoplay loop>
-            <source src="assets-artigos/apresentacao-section/video-writing.mp4" type="video/mp4">
+            <source src="assets/img-artigos/video-writing.mp4" type="video/mp4">
         </video>
     </section>
     <!-- SECTION ARTIGOS -->
@@ -22,7 +22,7 @@
                 <!-- um artigo -->
                 <div class="chamada-artigo">
                     <figure class="container-imagem-artigo">
-                        <img src="assets-artigos/img-artigos/profile-picture.jpg" alt="imagem do artigo">
+                        <img src="assets/img-artigos/profile-picture.jpg" alt="imagem do artigo">
                         <figcaption class="dados-art">
                             <span class="data-publicacao">data da publicacao</span>
                             <span class="autor-art">nome do autor</span>
@@ -42,7 +42,7 @@
 
                 <div class="chamada-artigo">
                     <figure class="container-imagem-artigo">
-                        <img src="assets-artigos/img-artigos/profile-picture.jpg" alt="imagem do artigo">
+                        <img src="assets/img-artigos/profile-picture.jpg" alt="imagem do artigo">
                         <figcaption class="dados-art">
                             <span class="data-publicacao">data da publicacao</span>
                             <span class="autor-art">Publicado por: </span>
