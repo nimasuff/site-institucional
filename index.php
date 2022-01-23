@@ -1,12 +1,12 @@
 <?php
-    include_once 'C:\xampp\htdocs\site-institucional\nav-bar.php';
+    include_once 'nav-bar.php';
 ?>
     <!-- CALL TO ACTION SECTION -->
     <section id="discovery">
         <div id="titulo-si">
             <h1>NIMAS</h1>
             <div class="sublinhado"></div>
-            <p>Núcleo de Inovação <br>Meio Ambiente e Sociedade</p>
+            <p>Núcleo de Inovação <br>Meio Ambiente e Sustentabilidade</p>
 
             <a href="index.php#contato" target="_self" class="btn-call-to-action">Saiba Mais</a>
         </div>
@@ -164,5 +164,5 @@
         </div>
     </section>
 <?php
-    include_once 'C:\xampp\htdocs\site-institucional\footer.php';
+    include_once 'footer.php';
 ?>
